@@ -1,0 +1,57 @@
+{
+  "generatedAt": "2026-11-17T13:09:53.789Z",
+  "note": "Engine run over 1000 synthetic student profiles (seeded, reproducible). Not field data.",
+  "cohort": 1000,
+  "knowledgeBase": {
+    "occupations": 35,
+    "schemes": 20,
+    "courses": 34,
+    "exams": 19,
+    "scamPatterns": 7
+  },
+  "aspiration": {
+    "avgNewForYouRoutesInTop6": {
+      "ours": 5.5,
+      "plainRanking": 5.5
+    },
+    "commonFourSlotsOf6ForUniformCaringTalking": {
+      "students": 551,
+      "ours": 0.97,
+      "plainRanking": 0.89
+    },
+    "avgDistinctTracksInTop6": {
+      "ours": 4.3,
+      "plainRanking": 3.7
+    },
+    "occupationsSurfacedAcrossCohort": 35,
+    "shortlistsStillShowingACommonFour": 38.5,
+    "genderFlipIdenticalShortlist": 100
+  },
+  "eligibility": {
+    "schemesCheckedPerStudent": 20,
+    "studentsWithAtLeastOneEligible": 94.1,
+    "studentsWithAtLeastOneNearMiss": 77,
+    "ofNonYesVerdicts": {
+      "nearMiss": 13.3,
+      "unknownWithQuestion": 0,
+      "hardNo": 86.7
+    },
+    "medianRupeesPerYearEligibleNow": 83000,
+    "medianRupeesPerYearIncludingOneDocAway": 123000
+  },
+  "performance": {
+    "fullEngineMsPerStudent": {
+      "p50": 0.04,
+      "p95": 0.06
+    },
+    "offerCheckMs": {
+      "p50": 0.004,
+      "p95": 0.007
+    },
+    "machine": "darwin/arm64, Node v24.16.0 (a low-end phone will be several times slower)"
+  },
+  "bundle": {
+    "precacheKiB": 296,
+    "jsGzipKiB": 86
+  }
+}

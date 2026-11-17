@@ -1,0 +1,477 @@
+[
+  {
+    "id": "solar-pv-technician", "nco": "7411", "track": "green", "minEducation": "class10", "nsqfLevel": 4,
+    "name": { "en": "Solar panel technician", "hi": "सोलर पैनल तकनीशियन", "ta": "சோலார் பேனல் தொழில்நுட்பர்", "kn": "ಸೌರ ಫಲಕ ತಂತ್ರಜ್ಞ" },
+    "summary": { "en": "Install and repair rooftop solar on homes in your own district.", "hi": "अपने ही ज़िले में घरों की छत पर सोलर लगाना और ठीक करना।", "ta": "உங்கள் மாவட்டத்திலேயே வீட்டு மாடி சோலார் அமைத்து பழுது பார்த்தல்.", "kn": "ನಿಮ್ಮ ಜಿಲ್ಲೆಯಲ್ಲೇ ಮನೆಗಳ ಮೇಲೆ ಸೌರ ಫಲಕ ಅಳವಡಿಸಿ ದುರಸ್ತಿ ಮಾಡುವುದು." },
+    "interests": ["hands_on", "nature", "computers"],
+    "steps": [
+      { "label": { "en": "Free basics of electricity (online)" }, "courseId": "sidh-electrical-basics", "duration": "2 weeks" },
+      { "label": { "en": "Suryamitra solar training" }, "courseId": "suryamitra", "duration": "3 months" },
+      { "label": { "en": "Apprenticeship with a solar installer" }, "duration": "6-12 months" }
+    ],
+    "exams": ["iti-admission"],
+    "schemes": ["naps", "pmkvy", "pm-vbry"],
+    "demandNote": "PM Surya Ghar plans 3 lakh+ skilled workers, including 1 lakh solar PV technicians (MNRE capacity-building guidelines).",
+    "sources": [{ "name": "MNRE PM Surya Ghar capacity-building guidelines", "url": "https://pmsuryaghar.gov.in", "asOf": "2026-11" }]
+  },
+  {
+    "id": "electrician", "nco": "7411", "track": "vocational", "minEducation": "class10", "nsqfLevel": 5,
+    "name": { "en": "Electrician", "hi": "इलेक्ट्रीशियन", "ta": "மின் பணியாளர்", "kn": "ವಿದ್ಯುತ್ ಕೆಲಸಗಾರ" },
+    "summary": { "en": "Wire houses, shops and factories; can start your own service.", "hi": "घर, दुकान, फैक्ट्री की वायरिंग; अपना काम भी शुरू कर सकते हैं।", "ta": "வீடு, கடை, தொழிற்சாலை மின் இணைப்பு; சொந்தத் தொழிலும் தொடங்கலாம்.", "kn": "ಮನೆ, ಅಂಗಡಿ, ಕಾರ್ಖಾನೆ ವೈರಿಂಗ್; ಸ್ವಂತ ಕೆಲಸವನ್ನೂ ಆರಂಭಿಸಬಹುದು." },
+    "interests": ["hands_on"],
+    "steps": [
+      { "label": { "en": "ITI Electrician (2 years)" }, "courseId": "iti-electrician", "duration": "2 years" },
+      { "label": { "en": "Apprenticeship (NAPS)" }, "duration": "1 year" },
+      { "label": { "en": "Electrical licence from the state board" } }
+    ],
+    "exams": ["iti-admission", "rrb-alp"],
+    "schemes": ["naps", "pm-vbry", "pmegp"],
+    "sources": [{ "name": "DGT NCVT trade list", "url": "https://dgt.gov.in", "asOf": "2026-11" }]
+  },
+  {
+    "id": "ac-technician", "nco": "7127", "track": "vocational", "minEducation": "class10", "nsqfLevel": 4,
+    "name": { "en": "AC and fridge technician", "hi": "AC और फ्रिज मैकेनिक", "ta": "ஏசி, குளிர்சாதனப் பெட்டி பழுதுபார்ப்பவர்", "kn": "AC ಮತ್ತು ಫ್ರಿಜ್ ತಂತ್ರಜ್ಞ" },
+    "summary": { "en": "Fix cooling machines; work is steady in towns, especially in summer.", "hi": "ठंडा करने वाली मशीनें ठीक करना; कस्बों में काम लगातार मिलता है।", "ta": "குளிரூட்டும் இயந்திரங்களை பழுது பார்த்தல்; நகரங்களில் நிலையான வேலை.", "kn": "ತಂಪು ಯಂತ್ರಗಳ ದುರಸ್ತಿ; ಪಟ್ಟಣಗಳಲ್ಲಿ ನಿರಂತರ ಕೆಲಸ." },
+    "interests": ["hands_on"],
+    "steps": [
+      { "label": { "en": "ITI Refrigeration & AC Technician" }, "courseId": "iti-rac", "duration": "2 years" },
+      { "label": { "en": "Apprenticeship with a service company" }, "duration": "1 year" }
+    ],
+    "exams": ["iti-admission"],
+    "schemes": ["naps", "pm-vbry", "pmegp"],
+    "sources": [{ "name": "DGT NCVT trade list", "url": "https://dgt.gov.in", "asOf": "2026-11" }]
+  },
+  {
+    "id": "mobile-repair", "nco": "7421", "track": "digital", "minEducation": "class8", "nsqfLevel": 4,
+    "name": { "en": "Mobile phone repair technician", "hi": "मोबाइल रिपेयर तकनीशियन", "ta": "கைபேசி பழுதுபார்ப்பவர்", "kn": "ಮೊಬೈಲ್ ದುರಸ್ತಿ ತಂತ್ರಜ್ಞ" },
+    "summary": { "en": "Repair phones in your village or market; small shop, low start cost.", "hi": "गाँव या बाज़ार में फ़ोन ठीक करना; छोटी दुकान, कम लागत।", "ta": "கிராமம் அல்லது சந்தையில் கைபேசி பழுது; குறைந்த முதலீட்டில் சிறிய கடை.", "kn": "ಹಳ್ಳಿ ಅಥವಾ ಮಾರುಕಟ್ಟೆಯಲ್ಲಿ ಫೋನ್ ದುರಸ್ತಿ; ಕಡಿಮೆ ಬಂಡವಾಳದ ಸಣ್ಣ ಅಂಗಡಿ." },
+    "interests": ["hands_on", "computers"],
+    "steps": [
+      { "label": { "en": "Short course: hand-held device technician" }, "courseId": "pmkvy-mobile-repair", "duration": "3 months" },
+      { "label": { "en": "Work 6 months in a repair shop" } },
+      { "label": { "en": "Start your own counter with a PMEGP or Mudra loan" } }
+    ],
+    "exams": [],
+    "schemes": ["pmkvy", "pmegp"],
+    "sources": [{ "name": "Skill India Digital Hub course catalogue", "url": "https://www.skillindiadigital.gov.in", "asOf": "2026-11" }]
+  },
+  {
+    "id": "ev-mechanic", "nco": "7231", "track": "green", "minEducation": "class10", "nsqfLevel": 4,
+    "name": { "en": "Two-wheeler and EV mechanic", "hi": "दोपहिया और इलेक्ट्रिक वाहन मैकेनिक", "ta": "இருசக்கர மற்றும் மின்வாகன மெக்கானிக்", "kn": "ದ್ವಿಚಕ್ರ ಮತ್ತು ವಿದ್ಯುತ್ ವಾಹನ ಮೆಕ್ಯಾನಿಕ್" },
+    "summary": { "en": "Service bikes, scooters and the new electric ones coming to every town.", "hi": "बाइक, स्कूटर और नए इलेक्ट्रिक वाहनों की सर्विस।", "ta": "பைக், ஸ்கூட்டர் மற்றும் புதிய மின்வாகனங்களை சர்வீஸ் செய்தல்.", "kn": "ಬೈಕ್, ಸ್ಕೂಟರ್ ಮತ್ತು ಹೊಸ ವಿದ್ಯುತ್ ವಾಹನಗಳ ಸರ್ವೀಸ್." },
+    "interests": ["hands_on"],
+    "steps": [
+      { "label": { "en": "ITI Mechanic Motor Vehicle" }, "courseId": "iti-mmv", "duration": "2 years" },
+      { "label": { "en": "EV service add-on course" }, "courseId": "sidh-ev", "duration": "1 month" },
+      { "label": { "en": "Apprenticeship at a dealer workshop" }, "duration": "1 year" }
+    ],
+    "exams": ["iti-admission"],
+    "schemes": ["naps", "pm-vbry", "pmegp"],
+    "sources": [{ "name": "DGT NCVT trade list", "url": "https://dgt.gov.in", "asOf": "2026-11" }]
+  },
+  {
+    "id": "welder", "nco": "7212", "track": "vocational", "minEducation": "class8", "nsqfLevel": 4,
+    "name": { "en": "Welder", "hi": "वेल्डर", "ta": "வெல்டர்", "kn": "ವೆಲ್ಡರ್" },
+    "summary": { "en": "Join metal for gates, trucks, ships and factories.", "hi": "गेट, ट्रक, जहाज़ और फैक्ट्री के लिए धातु जोड़ना।", "ta": "கேட், லாரி, கப்பல், தொழிற்சாலைக்கு உலோகம் இணைத்தல்.", "kn": "ಗೇಟ್, ಲಾರಿ, ಹಡಗು, ಕಾರ್ಖಾನೆಗಳಿಗೆ ಲೋಹ ಜೋಡಣೆ." },
+    "interests": ["hands_on"],
+    "steps": [
+      { "label": { "en": "ITI Welder (1 year)" }, "courseId": "iti-welder", "duration": "1 year" },
+      { "label": { "en": "Apprenticeship" }, "duration": "1 year" }
+    ],
+    "exams": ["iti-admission"],
+    "schemes": ["naps", "pm-vbry"],
+    "sources": [{ "name": "DGT NCVT trade list", "url": "https://dgt.gov.in", "asOf": "2026-11" }]
+  },
+  {
+    "id": "plumber", "nco": "7126", "track": "vocational", "minEducation": "class8", "nsqfLevel": 3,
+    "name": { "en": "Plumber", "hi": "प्लंबर", "ta": "குழாய் பணியாளர்", "kn": "ಕೊಳಾಯಿ ಕೆಲಸಗಾರ" },
+    "summary": { "en": "Fit water pipes and taps; Jal Jeevan Mission needs village plumbers.", "hi": "पानी के पाइप और नल लगाना; जल जीवन मिशन को गाँव के प्लंबर चाहिए।", "ta": "குழாய், நீர் இணைப்பு; ஜல் ஜீவன் திட்டத்துக்கு கிராம குழாய் பணியாளர்கள் தேவை.", "kn": "ನೀರಿನ ಪೈಪ್, ನಲ್ಲಿ ಅಳವಡಿಕೆ; ಜಲ ಜೀವನ್ ಮಿಷನ್‌ಗೆ ಹಳ್ಳಿ ಕೊಳಾಯಿಗಾರರು ಬೇಕು." },
+    "interests": ["hands_on"],
+    "steps": [
+      { "label": { "en": "ITI Plumber (1 year)" }, "courseId": "iti-plumber", "duration": "1 year" },
+      { "label": { "en": "Apprenticeship with a contractor" } }
+    ],
+    "exams": ["iti-admission"],
+    "schemes": ["naps", "pmkvy", "pmegp"],
+    "sources": [{ "name": "DGT NCVT trade list", "url": "https://dgt.gov.in", "asOf": "2026-11" }]
+  },
+  {
+    "id": "carpenter", "nco": "7115", "track": "self_employed", "minEducation": "class8",
+    "name": { "en": "Carpenter and furniture maker", "hi": "बढ़ई और फ़र्नीचर कारीगर", "ta": "தச்சர் மற்றும் மரச்சாமான் தயாரிப்பாளர்", "kn": "ಬಡಗಿ ಮತ್ತು ಪೀಠೋಪಕರಣ ತಯಾರಕ" },
+    "summary": { "en": "Make doors, furniture and modular kitchens; a PM Vishwakarma trade.", "hi": "दरवाज़े, फ़र्नीचर, मॉड्यूलर किचन बनाना; PM विश्वकर्मा का व्यवसाय।", "ta": "கதவு, மரச்சாமான், மாடுலர் சமையலறை; PM விஸ்வகர்மா தொழில்.", "kn": "ಬಾಗಿಲು, ಪೀಠೋಪಕರಣ, ಮಾಡ್ಯುಲರ್ ಅಡುಗೆಮನೆ; PM ವಿಶ್ವಕರ್ಮ ವೃತ್ತಿ." },
+    "interests": ["hands_on", "creative"],
+    "steps": [
+      { "label": { "en": "ITI Wood Work Technician or learn in the family trade" }, "courseId": "iti-carpenter", "duration": "1 year" },
+      { "label": { "en": "PM Vishwakarma skill verification and toolkit" } },
+      { "label": { "en": "Take orders online through ONDC / GeM" } }
+    ],
+    "exams": ["iti-admission"],
+    "schemes": ["pm-vishwakarma", "naps", "pmegp"],
+    "sources": [{ "name": "PM Vishwakarma trade list", "url": "https://pmvishwakarma.gov.in", "asOf": "2026-11" }]
+  },
+  {
+    "id": "tailor-designer", "nco": "7531", "track": "creative", "minEducation": "class8",
+    "name": { "en": "Tailor and fashion designer", "hi": "दर्ज़ी और फ़ैशन डिज़ाइनर", "ta": "தையல்காரர் மற்றும் ஆடை வடிவமைப்பாளர்", "kn": "ದರ್ಜಿ ಮತ್ತು ಫ್ಯಾಷನ್ ವಿನ್ಯಾಸಕ" },
+    "summary": { "en": "Stitch and design clothes; work from home, a unit, or sell online.", "hi": "कपड़े सिलना और डिज़ाइन करना; घर से, यूनिट में, या ऑनलाइन बेचें।", "ta": "ஆடை தைத்து வடிவமைத்தல்; வீட்டிலிருந்து அல்லது ஆன்லைனில் விற்கலாம்.", "kn": "ಬಟ್ಟೆ ಹೊಲಿಗೆ ಮತ್ತು ವಿನ್ಯಾಸ; ಮನೆಯಿಂದಲೇ ಅಥವಾ ಆನ್‌ಲೈನ್‌ನಲ್ಲಿ ಮಾರಾಟ." },
+    "interests": ["creative", "hands_on"],
+    "steps": [
+      { "label": { "en": "ITI Sewing Technology (1 year)" }, "courseId": "iti-sewing", "duration": "1 year" },
+      { "label": { "en": "Apprenticeship in a garment unit (many hire women, with hostels)" } },
+      { "label": { "en": "PM Vishwakarma toolkit if you are a family tailor" } }
+    ],
+    "exams": ["iti-admission"],
+    "schemes": ["pm-vishwakarma", "naps", "pmegp"],
+    "sources": [{ "name": "DGT NCVT trade list", "url": "https://dgt.gov.in", "asOf": "2026-11" }]
+  },
+  {
+    "id": "beautician", "nco": "5142", "track": "self_employed", "minEducation": "class8", "nsqfLevel": 4,
+    "name": { "en": "Beautician and salon owner", "hi": "ब्यूटीशियन और सैलून मालिक", "ta": "அழகுக்கலை நிபுணர்", "kn": "ಬ್ಯೂಟಿಷಿಯನ್ ಮತ್ತು ಸಲೂನ್ ಮಾಲೀಕ" },
+    "summary": { "en": "Hair, skin and bridal work; can run from home in the village.", "hi": "बाल, त्वचा और दुल्हन का मेकअप; गाँव में घर से चला सकते हैं।", "ta": "கூந்தல், சரும, மணப்பெண் அலங்காரம்; வீட்டிலேயே நடத்தலாம்.", "kn": "ಕೂದಲು, ಚರ್ಮ, ವಧು ಅಲಂಕಾರ; ಮನೆಯಿಂದಲೇ ನಡೆಸಬಹುದು." },
+    "interests": ["creative", "talking"],
+    "steps": [
+      { "label": { "en": "Assistant Beauty Therapist course" }, "courseId": "pmkvy-beauty", "duration": "3 months" },
+      { "label": { "en": "Work in a salon for 6 months" } },
+      { "label": { "en": "Start at home with a Mudra Shishu loan" } }
+    ],
+    "exams": [],
+    "schemes": ["pmkvy", "pmegp"],
+    "sources": [{ "name": "Skill India Digital Hub course catalogue", "url": "https://www.skillindiadigital.gov.in", "asOf": "2026-11" }]
+  },
+  {
+    "id": "general-duty-assistant", "nco": "5321", "track": "care", "minEducation": "class10", "nsqfLevel": 4,
+    "name": { "en": "Patient care assistant", "hi": "मरीज़ देखभाल सहायक", "ta": "நோயாளர் பராமரிப்பு உதவியாளர்", "kn": "ರೋಗಿ ಆರೈಕೆ ಸಹಾಯಕ" },
+    "summary": { "en": "Help nurses care for patients in hospitals and homes.", "hi": "अस्पताल और घरों में नर्सों के साथ मरीज़ों की देखभाल।", "ta": "மருத்துவமனை மற்றும் வீடுகளில் செவிலியர்களுடன் நோயாளர் பராமரிப்பு.", "kn": "ಆಸ್ಪತ್ರೆ ಮತ್ತು ಮನೆಗಳಲ್ಲಿ ನರ್ಸ್‌ಗಳೊಂದಿಗೆ ರೋಗಿ ಆರೈಕೆ." },
+    "interests": ["caring"],
+    "steps": [
+      { "label": { "en": "General Duty Assistant course" }, "courseId": "pmkvy-gda", "duration": "3-4 months" },
+      { "label": { "en": "Hospital on-the-job training" } },
+      { "label": { "en": "Later: GNM nursing to grow" }, "courseId": "gnm" }
+    ],
+    "exams": ["gnm-entrance"],
+    "schemes": ["pmkvy", "ddu-gky", "pm-vbry"],
+    "sources": [{ "name": "Healthcare Sector Skill Council", "url": "https://healthcare-ssc.in", "asOf": "2026-11" }]
+  },
+  {
+    "id": "nurse", "nco": "2221", "track": "care", "minEducation": "class12",
+    "name": { "en": "Nurse", "hi": "नर्स", "ta": "செவிலியர்", "kn": "ನರ್ಸ್" },
+    "summary": { "en": "Care for patients in hospitals, PHCs and abroad through legal routes.", "hi": "अस्पताल, PHC और वैध रास्ते से विदेश में मरीज़ों की देखभाल।", "ta": "மருத்துவமனை, ஆரம்ப சுகாதார நிலையம், சட்டப்பூர்வ வழியில் வெளிநாட்டில் பணி.", "kn": "ಆಸ್ಪತ್ರೆ, PHC ಮತ್ತು ಕಾನೂನುಬದ್ಧ ಮಾರ್ಗದಲ್ಲಿ ವಿದೇಶದಲ್ಲಿ ಸೇವೆ." },
+    "interests": ["caring"],
+    "steps": [
+      { "label": { "en": "Class 12 (science preferred for BSc)" } },
+      { "label": { "en": "GNM diploma (3 years) or BSc Nursing (4 years)" }, "courseId": "gnm" },
+      { "label": { "en": "Register with the State Nursing Council" } }
+    ],
+    "exams": ["gnm-entrance", "neet-ug"],
+    "schemes": ["sc-post-matric", "st-post-matric", "pm-yasasvi", "minority-post-matric"],
+    "sources": [{ "name": "Indian Nursing Council", "url": "https://www.indiannursingcouncil.org", "asOf": "2026-11" }]
+  },
+  {
+    "id": "lab-technician", "nco": "3212", "track": "care", "minEducation": "class12",
+    "name": { "en": "Medical lab technician", "hi": "मेडिकल लैब तकनीशियन", "ta": "மருத்துவ ஆய்வக தொழில்நுட்பர்", "kn": "ವೈದ್ಯಕೀಯ ಪ್ರಯೋಗಾಲಯ ತಂತ್ರಜ್ಞ" },
+    "summary": { "en": "Test blood and samples in labs and hospitals.", "hi": "लैब और अस्पताल में खून और नमूनों की जाँच।", "ta": "ஆய்வகங்களில் இரத்தம் மற்றும் மாதிரிகளை பரிசோதித்தல்.", "kn": "ಪ್ರಯೋಗಾಲಯಗಳಲ್ಲಿ ರಕ್ತ ಮತ್ತು ಮಾದರಿ ಪರೀಕ್ಷೆ." },
+    "interests": ["caring", "computers"],
+    "steps": [
+      { "label": { "en": "Class 12 science" } },
+      { "label": { "en": "Diploma in Medical Lab Technology (DMLT)" }, "courseId": "dmlt", "duration": "2 years" }
+    ],
+    "exams": [],
+    "schemes": ["sc-post-matric", "st-post-matric", "pm-yasasvi", "aicte-pragati"],
+    "sources": [{ "name": "State paramedical boards", "asOf": "2026-11" }]
+  },
+  {
+    "id": "anganwadi-ecce", "nco": "2342", "track": "care", "minEducation": "class12",
+    "name": { "en": "Early childhood educator", "hi": "छोटे बच्चों की शिक्षिका", "ta": "முன்பருவக் கல்வி ஆசிரியர்", "kn": "ಪೂರ್ವ ಪ್ರಾಥಮಿಕ ಶಿಕ್ಷಕ" },
+    "summary": { "en": "Teach ages 3-6 in anganwadis and pre-schools.", "hi": "आंगनवाड़ी और प्री-स्कूल में 3-6 साल के बच्चों को पढ़ाना।", "ta": "அங்கன்வாடி, முன்பள்ளியில் 3-6 வயது குழந்தைகளுக்கு கற்பித்தல்.", "kn": "ಅಂಗನವಾಡಿ, ಪೂರ್ವ ಶಾಲೆಯಲ್ಲಿ 3-6 ವರ್ಷದ ಮಕ್ಕಳಿಗೆ ಬೋಧನೆ." },
+    "interests": ["talking", "caring"],
+    "steps": [
+      { "label": { "en": "Class 12" } },
+      { "label": { "en": "Diploma in Early Childhood Care & Education" }, "courseId": "ecce-diploma", "duration": "1 year" }
+    ],
+    "exams": [],
+    "schemes": ["sc-post-matric", "st-post-matric", "pm-yasasvi"],
+    "sources": [{ "name": "NCTE", "url": "https://ncte.gov.in", "asOf": "2026-11" }]
+  },
+  {
+    "id": "school-teacher", "nco": "2341", "track": "degree", "minEducation": "class12",
+    "name": { "en": "School teacher", "hi": "स्कूल शिक्षक", "ta": "பள்ளி ஆசிரியர்", "kn": "ಶಾಲಾ ಶಿಕ್ಷಕ" },
+    "summary": { "en": "Teach children in government or private schools.", "hi": "सरकारी या निजी स्कूल में बच्चों को पढ़ाना।", "ta": "அரசு அல்லது தனியார் பள்ளியில் குழந்தைகளுக்கு கற்பித்தல்.", "kn": "ಸರ್ಕಾರಿ ಅಥವಾ ಖಾಸಗಿ ಶಾಲೆಯಲ್ಲಿ ಮಕ್ಕಳಿಗೆ ಬೋಧನೆ." },
+    "interests": ["talking"],
+    "steps": [
+      { "label": { "en": "D.El.Ed (2 years) after Class 12, or degree + B.Ed" }, "courseId": "deled" },
+      { "label": { "en": "Clear CTET / state TET" } }
+    ],
+    "exams": ["deled-entrance", "ctet"],
+    "schemes": ["sc-post-matric", "st-post-matric", "pm-yasasvi", "csss"],
+    "sources": [{ "name": "NCTE", "url": "https://ncte.gov.in", "asOf": "2026-11" }]
+  },
+  {
+    "id": "drone-pilot", "nco": "3153", "track": "agri", "minEducation": "class10",
+    "name": { "en": "Agri drone pilot", "hi": "कृषि ड्रोन पायलट", "ta": "வேளாண் ட்ரோன் இயக்குநர்", "kn": "ಕೃಷಿ ಡ್ರೋನ್ ಪೈಲಟ್" },
+    "summary": { "en": "Fly drones to spray and survey farms; a new rural service.", "hi": "खेतों में छिड़काव और सर्वे के लिए ड्रोन उड़ाना; नया ग्रामीण काम।", "ta": "வயல்களில் தெளிப்பு, அளவீட்டுக்கு ட்ரோன் இயக்குதல்; புதிய கிராமச் சேவை.", "kn": "ಹೊಲಗಳಲ್ಲಿ ಸಿಂಪಡಣೆ, ಸಮೀಕ್ಷೆಗೆ ಡ್ರೋನ್ ಹಾರಾಟ; ಹೊಸ ಗ್ರಾಮೀಣ ಸೇವೆ." },
+    "interests": ["computers", "nature", "hands_on"],
+    "steps": [
+      { "label": { "en": "Class 10 pass, age 18+" } },
+      { "label": { "en": "DGCA Remote Pilot Certificate at an approved school" }, "courseId": "dgca-rpc", "duration": "1-2 weeks" },
+      { "label": { "en": "Join an FPO or custom hiring centre as drone operator" } }
+    ],
+    "exams": [],
+    "schemes": ["pmegp", "pmkvy"],
+    "demandNote": "NCO-2015 predates drones; nearest unit group shown. DGCA certifies remote pilots under the Drone Rules, 2021.",
+    "sources": [{ "name": "DGCA Digital Sky - Remote Pilot Certificate", "url": "https://digitalsky.dgca.gov.in", "asOf": "2026-11" }]
+  },
+  {
+    "id": "dairy-entrepreneur", "nco": "6121", "track": "agri", "minEducation": "class8",
+    "name": { "en": "Dairy farmer and entrepreneur", "hi": "डेयरी किसान और उद्यमी", "ta": "பால் பண்ணையாளர்", "kn": "ಹೈನುಗಾರ ಮತ್ತು ಉದ್ಯಮಿ" },
+    "summary": { "en": "Run a modern dairy with good breeds and sell to the cooperative.", "hi": "अच्छी नस्ल के साथ आधुनिक डेयरी चलाना, सहकारी को दूध बेचना।", "ta": "நல்ல இனங்களுடன் நவீன பால் பண்ணை, கூட்டுறவுக்கு விற்பனை.", "kn": "ಉತ್ತಮ ತಳಿಯೊಂದಿಗೆ ಆಧುನಿಕ ಹೈನುಗಾರಿಕೆ, ಸಹಕಾರಿಗೆ ಮಾರಾಟ." },
+    "interests": ["nature", "numbers"],
+    "steps": [
+      { "label": { "en": "Dairy farmer / entrepreneur course" }, "courseId": "pmkvy-dairy", "duration": "1-2 months" },
+      { "label": { "en": "Join the village milk cooperative" } },
+      { "label": { "en": "Expand with a PMEGP loan" } }
+    ],
+    "exams": [],
+    "schemes": ["pmkvy", "pmegp"],
+    "sources": [{ "name": "Agriculture Skill Council of India", "url": "https://asci-india.com", "asOf": "2026-11" }]
+  },
+  {
+    "id": "agri-field-officer", "nco": "3142", "track": "agri", "minEducation": "class12",
+    "name": { "en": "Agriculture field technician", "hi": "कृषि फ़ील्ड तकनीशियन", "ta": "வேளாண் கள தொழில்நுட்பர்", "kn": "ಕೃಷಿ ಕ್ಷೇತ್ರ ತಂತ್ರಜ್ಞ" },
+    "summary": { "en": "Advise farmers on soil, seeds and crops for FPOs and agri companies.", "hi": "FPO और कृषि कंपनियों के लिए किसानों को मिट्टी, बीज, फ़सल की सलाह।", "ta": "உழவர் அமைப்புகளுக்காக மண், விதை, பயிர் ஆலோசனை.", "kn": "FPO, ಕೃಷಿ ಕಂಪನಿಗಳಿಗಾಗಿ ರೈತರಿಗೆ ಮಣ್ಣು, ಬೀಜ, ಬೆಳೆ ಸಲಹೆ." },
+    "interests": ["nature", "talking"],
+    "steps": [
+      { "label": { "en": "Class 12 (science or agriculture)" } },
+      { "label": { "en": "Diploma in Agriculture or BSc Agriculture" }, "courseId": "bsc-agri" }
+    ],
+    "exams": ["cuet-ug"],
+    "schemes": ["csss", "sc-post-matric", "st-post-matric", "pm-yasasvi", "pm-internship"],
+    "sources": [{ "name": "ICAR admissions (via CUET)", "url": "https://icar.org.in", "asOf": "2026-11" }]
+  },
+  {
+    "id": "fish-farmer", "nco": "6221", "track": "agri", "minEducation": "class8",
+    "name": { "en": "Fish farmer", "hi": "मछली पालक", "ta": "மீன் வளர்ப்பவர்", "kn": "ಮೀನು ಸಾಕಣೆದಾರ" },
+    "summary": { "en": "Grow fish in ponds or tanks; PM Matsya Sampada supports new farmers.", "hi": "तालाब या टैंक में मछली पालन; PM मत्स्य संपदा नए किसानों की मदद करती है।", "ta": "குளம் அல்லது தொட்டியில் மீன் வளர்ப்பு; PM மத்ஸ்ய சம்பதா உதவி.", "kn": "ಕೆರೆ ಅಥವಾ ತೊಟ್ಟಿಯಲ್ಲಿ ಮೀನು ಸಾಕಣೆ; PM ಮತ್ಸ್ಯ ಸಂಪದ ನೆರವು." },
+    "interests": ["nature"],
+    "steps": [
+      { "label": { "en": "Aquaculture worker course" }, "courseId": "pmkvy-fish", "duration": "1-2 months" },
+      { "label": { "en": "Pond setup with fisheries department support" } }
+    ],
+    "exams": [],
+    "schemes": ["pmkvy", "pmegp"],
+    "sources": [{ "name": "Department of Fisheries - PMMSY", "url": "https://pmmsy.dof.gov.in", "asOf": "2026-11" }]
+  },
+  {
+    "id": "baker-food-processing", "nco": "7512", "track": "self_employed", "minEducation": "class8",
+    "name": { "en": "Baker and food processor", "hi": "बेकर और खाद्य प्रसंस्करण", "ta": "அடுமனையாளர் மற்றும் உணவு பதப்படுத்துபவர்", "kn": "ಬೇಕರ್ ಮತ್ತು ಆಹಾರ ಸಂಸ್ಕರಣೆ" },
+    "summary": { "en": "Make bakery items, pickles or millet snacks to sell locally.", "hi": "बेकरी, अचार या मिलेट स्नैक्स बनाकर स्थानीय बिक्री।", "ta": "அடுமனைப் பொருட்கள், ஊறுகாய், சிறுதானிய தின்பண்டம் தயாரித்து விற்றல்.", "kn": "ಬೇಕರಿ, ಉಪ್ಪಿನಕಾಯಿ, ಸಿರಿಧಾನ್ಯ ತಿಂಡಿ ತಯಾರಿಸಿ ಮಾರಾಟ." },
+    "interests": ["cooking", "numbers"],
+    "steps": [
+      { "label": { "en": "ITI Food Production or food processing short course" }, "courseId": "iti-food-production" },
+      { "label": { "en": "FSSAI basic registration" } },
+      { "label": { "en": "Grow with PM FME or PMEGP support" } }
+    ],
+    "exams": ["iti-admission"],
+    "schemes": ["pmegp", "pmkvy", "naps"],
+    "sources": [{ "name": "Food Industry Capacity & Skill Initiative", "url": "https://ficsi.in", "asOf": "2026-11" }]
+  },
+  {
+    "id": "chef", "nco": "5120", "track": "vocational", "minEducation": "class10",
+    "name": { "en": "Cook and chef", "hi": "रसोइया और शेफ़", "ta": "சமையல் கலைஞர்", "kn": "ಅಡುಗೆಯವರು ಮತ್ತು ಶೆಫ್" },
+    "summary": { "en": "Cook in hotels, hospitals, railways or cruise ships.", "hi": "होटल, अस्पताल, रेलवे या जहाज़ों में खाना बनाना।", "ta": "ஹோட்டல், மருத்துவமனை, ரயில்வே, கப்பல்களில் சமையல்.", "kn": "ಹೋಟೆಲ್, ಆಸ್ಪತ್ರೆ, ರೈಲ್ವೆ, ಹಡಗುಗಳಲ್ಲಿ ಅಡುಗೆ." },
+    "interests": ["cooking"],
+    "steps": [
+      { "label": { "en": "Commis chef course or ITI Food Production" }, "courseId": "iti-food-production" },
+      { "label": { "en": "Diploma at an Institute of Hotel Management (via NCHM JEE)" } }
+    ],
+    "exams": ["nchm-jee"],
+    "schemes": ["naps", "pmkvy", "pm-vbry"],
+    "sources": [{ "name": "NCHMCT", "url": "https://nchm.gov.in", "asOf": "2026-11" }]
+  },
+  {
+    "id": "csc-vle", "nco": "4229", "track": "digital", "minEducation": "class10",
+    "name": { "en": "Village digital service centre owner", "hi": "गाँव का डिजिटल सेवा केंद्र (CSC) संचालक", "ta": "கிராம டிஜிட்டல் சேவை மைய உரிமையாளர்", "kn": "ಗ್ರಾಮ ಡಿಜಿಟಲ್ ಸೇವಾ ಕೇಂದ್ರ ಮಾಲೀಕ" },
+    "summary": { "en": "Help villagers with forms, payments and certificates; earn per service.", "hi": "गाँव वालों को फ़ॉर्म, भुगतान, प्रमाणपत्र में मदद; हर सेवा पर कमाई।", "ta": "கிராம மக்களுக்கு படிவம், கட்டணம், சான்றிதழ் உதவி; ஒவ்வொரு சேவைக்கும் வருமானம்.", "kn": "ಹಳ್ಳಿಗರಿಗೆ ಅರ್ಜಿ, ಪಾವತಿ, ಪ್ರಮಾಣಪತ್ರ ನೆರವು; ಪ್ರತಿ ಸೇವೆಗೆ ಗಳಿಕೆ." },
+    "interests": ["computers", "talking", "numbers"],
+    "steps": [
+      { "label": { "en": "Basic computer course (COPA or online)" }, "courseId": "iti-copa" },
+      { "label": { "en": "Register as a CSC Village Level Entrepreneur" } }
+    ],
+    "exams": [],
+    "schemes": ["pmegp"],
+    "sources": [{ "name": "CSC e-Governance Services India", "url": "https://csc.gov.in", "asOf": "2026-11" }]
+  },
+  {
+    "id": "bank-correspondent", "nco": "4211", "track": "digital", "minEducation": "class10",
+    "name": { "en": "Banking correspondent (bank mitra)", "hi": "बैंक मित्र (बिज़नेस करेस्पोंडेंट)", "ta": "வங்கி முகவர் (பேங்க் மித்ரா)", "kn": "ಬ್ಯಾಂಕ್ ಮಿತ್ರ" },
+    "summary": { "en": "Run a mini bank in your village: deposits, withdrawals, pensions.", "hi": "गाँव में मिनी बैंक: जमा, निकासी, पेंशन।", "ta": "உங்கள் கிராமத்தில் சிறு வங்கி: வைப்பு, பணம் எடுத்தல், ஓய்வூதியம்.", "kn": "ಹಳ್ಳಿಯಲ್ಲಿ ಮಿನಿ ಬ್ಯಾಂಕ್: ಠೇವಣಿ, ಹಣ ಹಿಂಪಡೆಯುವಿಕೆ, ಪಿಂಚಣಿ." },
+    "interests": ["numbers", "talking"],
+    "steps": [
+      { "label": { "en": "IIBF Certificate for Business Correspondents" }, "duration": "self-study + exam" },
+      { "label": { "en": "Tie up with a bank or BC company" } }
+    ],
+    "exams": ["iibf-bc"],
+    "schemes": [],
+    "sources": [{ "name": "Indian Institute of Banking & Finance", "url": "https://www.iibf.org.in", "asOf": "2026-11" }]
+  },
+  {
+    "id": "accounts-assistant", "nco": "4311", "track": "vocational", "minEducation": "class12",
+    "name": { "en": "Accounts assistant (Tally, GST)", "hi": "अकाउंट्स सहायक (टैली, GST)", "ta": "கணக்கு உதவியாளர் (டேலி, GST)", "kn": "ಲೆಕ್ಕ ಸಹಾಯಕ (ಟ್ಯಾಲಿ, GST)" },
+    "summary": { "en": "Keep accounts and file GST for shops and small firms.", "hi": "दुकानों और छोटी कंपनियों का हिसाब और GST।", "ta": "கடைகள், சிறு நிறுவனங்களுக்கு கணக்கு, GST.", "kn": "ಅಂಗಡಿ, ಸಣ್ಣ ಸಂಸ್ಥೆಗಳಿಗೆ ಲೆಕ್ಕ ಮತ್ತು GST." },
+    "interests": ["numbers", "computers"],
+    "steps": [
+      { "label": { "en": "Accounts executive course" }, "courseId": "pmkvy-accounts", "duration": "3 months" },
+      { "label": { "en": "B.Com by distance (SWAYAM / open university) while working" }, "courseId": "bcom-open" },
+      { "label": { "en": "Option: CA Foundation" } }
+    ],
+    "exams": ["ca-foundation", "ibps-clerk"],
+    "schemes": ["pm-internship", "naps", "pm-vbry", "csss"],
+    "sources": [{ "name": "BFSI Sector Skill Council", "url": "https://bfsissc.com", "asOf": "2026-11" }]
+  },
+  {
+    "id": "web-developer", "nco": "2513", "track": "digital", "minEducation": "class12",
+    "name": { "en": "Web and app developer", "hi": "वेब और ऐप डेवलपर", "ta": "இணையம் மற்றும் செயலி உருவாக்குநர்", "kn": "ವೆಬ್ ಮತ್ತು ಆ್ಯಪ್ ಡೆವಲಪರ್" },
+    "summary": { "en": "Build websites and apps; can work remotely from your district.", "hi": "वेबसाइट और ऐप बनाना; अपने ज़िले से रिमोट काम।", "ta": "இணையதளம், செயலி உருவாக்குதல்; உங்கள் மாவட்டத்திலிருந்தே தொலைதூரப் பணி.", "kn": "ವೆಬ್‌ಸೈಟ್, ಆ್ಯಪ್ ನಿರ್ಮಾಣ; ನಿಮ್ಮ ಜಿಲ್ಲೆಯಿಂದಲೇ ದೂರದ ಕೆಲಸ." },
+    "interests": ["computers"],
+    "steps": [
+      { "label": { "en": "Free programming course on SWAYAM" }, "courseId": "swayam-programming" },
+      { "label": { "en": "Diploma in Computer Engineering or BCA / BSc" }, "courseId": "diploma-cs" },
+      { "label": { "en": "Build 3 small projects; PM Internship" } }
+    ],
+    "exams": ["polytechnic-entrance", "cuet-ug", "jee-main"],
+    "schemes": ["aicte-pragati", "aicte-saksham", "csss", "pm-internship"],
+    "sources": [{ "name": "SWAYAM", "url": "https://swayam.gov.in", "asOf": "2026-11" }]
+  },
+  {
+    "id": "graphic-designer", "nco": "2166", "track": "creative", "minEducation": "class10",
+    "name": { "en": "Graphic designer", "hi": "ग्राफ़िक डिज़ाइनर", "ta": "வரைகலை வடிவமைப்பாளர்", "kn": "ಗ್ರಾಫಿಕ್ ವಿನ್ಯಾಸಕ" },
+    "summary": { "en": "Design posters, packaging and social media for local businesses.", "hi": "स्थानीय दुकानों के लिए पोस्टर, पैकेजिंग, सोशल मीडिया डिज़ाइन।", "ta": "உள்ளூர் வணிகங்களுக்கு சுவரொட்டி, பொதி, சமூக ஊடக வடிவமைப்பு.", "kn": "ಸ್ಥಳೀಯ ವ್ಯಾಪಾರಗಳಿಗೆ ಪೋಸ್ಟರ್, ಪ್ಯಾಕೇಜಿಂಗ್, ಸಾಮಾಜಿಕ ಮಾಧ್ಯಮ ವಿನ್ಯಾಸ." },
+    "interests": ["creative", "computers"],
+    "steps": [
+      { "label": { "en": "Free design course on Skill India Digital Hub" }, "courseId": "sidh-design" },
+      { "label": { "en": "Make a portfolio of 10 real designs for local shops" } },
+      { "label": { "en": "Option: NIFT / design degree" } }
+    ],
+    "exams": ["cuet-ug"],
+    "schemes": ["pm-internship", "pmegp"],
+    "sources": [{ "name": "Skill India Digital Hub", "url": "https://www.skillindiadigital.gov.in", "asOf": "2026-11" }]
+  },
+  {
+    "id": "local-journalist", "nco": "2642", "track": "creative", "minEducation": "class12",
+    "name": { "en": "Local journalist and video creator", "hi": "स्थानीय पत्रकार और वीडियो क्रिएटर", "ta": "உள்ளூர் செய்தியாளர், வீடியோ படைப்பாளர்", "kn": "ಸ್ಥಳೀಯ ಪತ್ರಕರ್ತ ಮತ್ತು ವೀಡಿಯೊ ರಚನೆಕಾರ" },
+    "summary": { "en": "Report and make videos in your own language for your region.", "hi": "अपनी भाषा में अपने इलाके की ख़बरें और वीडियो।", "ta": "உங்கள் மொழியில் உங்கள் பகுதிக்கான செய்தி, வீடியோ.", "kn": "ನಿಮ್ಮ ಭಾಷೆಯಲ್ಲಿ ನಿಮ್ಮ ಪ್ರದೇಶದ ಸುದ್ದಿ ಮತ್ತು ವೀಡಿಯೊ." },
+    "interests": ["talking", "creative", "computers"],
+    "steps": [
+      { "label": { "en": "BA Journalism / Mass Communication (CUET)" } },
+      { "label": { "en": "Free mobile journalism course on SWAYAM" }, "courseId": "swayam-mojo" }
+    ],
+    "exams": ["cuet-ug"],
+    "schemes": ["csss", "sc-post-matric", "st-post-matric", "pm-yasasvi", "pm-internship"],
+    "sources": [{ "name": "SWAYAM", "url": "https://swayam.gov.in", "asOf": "2026-11" }]
+  },
+  {
+    "id": "civil-technician", "nco": "3112", "track": "vocational", "minEducation": "class10",
+    "name": { "en": "Civil site supervisor and surveyor", "hi": "सिविल साइट सुपरवाइज़र और सर्वेयर", "ta": "கட்டட மேற்பார்வையாளர், நில அளவையர்", "kn": "ಸಿವಿಲ್ ಸೈಟ್ ಮೇಲ್ವಿಚಾರಕ ಮತ್ತು ಸರ್ವೇಯರ್" },
+    "summary": { "en": "Supervise roads, houses and PMAY sites; measure land.", "hi": "सड़क, मकान, PMAY साइट की देखरेख; ज़मीन नापना।", "ta": "சாலை, வீடு, PMAY கட்டுமான மேற்பார்வை; நில அளவீடு.", "kn": "ರಸ್ತೆ, ಮನೆ, PMAY ಕಾಮಗಾರಿ ಮೇಲ್ವಿಚಾರಣೆ; ಭೂಮಿ ಅಳತೆ." },
+    "interests": ["hands_on", "numbers"],
+    "steps": [
+      { "label": { "en": "Diploma in Civil Engineering (polytechnic) or ITI Surveyor" }, "courseId": "diploma-civil", "duration": "3 years" },
+      { "label": { "en": "Apprenticeship (NATS) with a contractor" } }
+    ],
+    "exams": ["polytechnic-entrance"],
+    "schemes": ["aicte-pragati", "aicte-saksham", "naps", "pm-internship"],
+    "sources": [{ "name": "AICTE", "url": "https://www.aicte-india.org", "asOf": "2026-11" }]
+  },
+  {
+    "id": "vet-assistant", "nco": "3240", "track": "agri", "minEducation": "class10",
+    "name": { "en": "Animal health worker (pashu sakhi)", "hi": "पशु स्वास्थ्य कार्यकर्ता (पशु सखी)", "ta": "கால்நடை சுகாதாரப் பணியாளர்", "kn": "ಪಶು ಆರೋಗ್ಯ ಕಾರ್ಯಕರ್ತೆ (ಪಶು ಸಖಿ)" },
+    "summary": { "en": "Give first aid, vaccines and advice for village animals.", "hi": "गाँव के पशुओं को प्राथमिक उपचार, टीके और सलाह।", "ta": "கிராமக் கால்நடைகளுக்கு முதலுதவி, தடுப்பூசி, ஆலோசனை.", "kn": "ಹಳ್ಳಿ ಜಾನುವಾರುಗಳಿಗೆ ಪ್ರಥಮ ಚಿಕಿತ್ಸೆ, ಲಸಿಕೆ, ಸಲಹೆ." },
+    "interests": ["nature", "caring"],
+    "steps": [
+      { "label": { "en": "Pashu sakhi training through the State Rural Livelihood Mission" } },
+      { "label": { "en": "Option: Diploma in veterinary pharmacy / BVSc via NEET" } }
+    ],
+    "exams": ["neet-ug"],
+    "schemes": ["pmkvy", "ddu-gky"],
+    "sources": [{ "name": "DAY-NRLM livelihood programmes", "url": "https://aajeevika.gov.in", "asOf": "2026-11" }]
+  },
+  {
+    "id": "retail-associate", "nco": "5223", "track": "vocational", "minEducation": "class10",
+    "name": { "en": "Retail sales associate", "hi": "रिटेल सेल्स एसोसिएट", "ta": "சில்லறை விற்பனை உதவியாளர்", "kn": "ಚಿಲ್ಲರೆ ಮಾರಾಟ ಸಹಾಯಕ" },
+    "summary": { "en": "Work in supermarkets and showrooms; a quick first job.", "hi": "सुपरमार्केट और शोरूम में काम; जल्दी मिलने वाली पहली नौकरी।", "ta": "பல்பொருள் அங்காடி, ஷோரூம் பணி; விரைவான முதல் வேலை.", "kn": "ಸೂಪರ್‌ಮಾರ್ಕೆಟ್, ಶೋರೂಂ ಕೆಲಸ; ಬೇಗ ಸಿಗುವ ಮೊದಲ ಉದ್ಯೋಗ." },
+    "interests": ["talking", "numbers"],
+    "steps": [
+      { "label": { "en": "Retail sales associate course" }, "courseId": "pmkvy-retail", "duration": "2-3 months" },
+      { "label": { "en": "Apprenticeship with a retail chain" } }
+    ],
+    "exams": [],
+    "schemes": ["ddu-gky", "pmkvy", "naps", "pm-vbry"],
+    "sources": [{ "name": "Retailers Association's Skill Council of India", "url": "https://rasci.in", "asOf": "2026-11" }]
+  },
+  {
+    "id": "army-agniveer", "nco": "0310", "track": "service", "minEducation": "class10",
+    "name": { "en": "Soldier (Agniveer)", "hi": "सैनिक (अग्निवीर)", "ta": "இராணுவ வீரர் (அக்னிவீர்)", "kn": "ಸೈನಿಕ (ಅಗ್ನಿವೀರ)" },
+    "summary": { "en": "Serve in the Army, Navy or Air Force for 4 years.", "hi": "थल, जल या वायु सेना में 4 साल सेवा।", "ta": "தரை, கடல், வான் படையில் 4 ஆண்டு சேவை.", "kn": "ಭೂ, ನೌಕಾ, ವಾಯು ಪಡೆಯಲ್ಲಿ 4 ವರ್ಷ ಸೇವೆ." },
+    "interests": ["uniform"],
+    "steps": [
+      { "label": { "en": "Physical fitness: daily running and exercise" } },
+      { "label": { "en": "Agniveer online entrance exam, then rally" } }
+    ],
+    "exams": ["agniveer-army", "nda"],
+    "schemes": [],
+    "sources": [{ "name": "Join Indian Army", "url": "https://joinindianarmy.nic.in", "asOf": "2026-11" }]
+  },
+  {
+    "id": "police-constable", "nco": "5412", "track": "service", "minEducation": "class10",
+    "name": { "en": "Police constable", "hi": "पुलिस कांस्टेबल", "ta": "காவலர்", "kn": "ಪೊಲೀಸ್ ಕಾನ್‌ಸ್ಟೆಬಲ್" },
+    "summary": { "en": "Keep people safe in your state or central police forces.", "hi": "राज्य या केंद्रीय पुलिस बल में लोगों की सुरक्षा।", "ta": "மாநில அல்லது மத்திய காவல் படையில் மக்கள் பாதுகாப்பு.", "kn": "ರಾಜ್ಯ ಅಥವಾ ಕೇಂದ್ರ ಪೊಲೀಸ್ ಪಡೆಯಲ್ಲಿ ಜನರ ರಕ್ಷಣೆ." },
+    "interests": ["uniform"],
+    "steps": [
+      { "label": { "en": "Fitness and general knowledge preparation" } },
+      { "label": { "en": "State police constable exam or SSC GD" } }
+    ],
+    "exams": ["police-constable", "ssc-gd"],
+    "schemes": [],
+    "sources": [{ "name": "Staff Selection Commission", "url": "https://ssc.gov.in", "asOf": "2026-11" }]
+  },
+  {
+    "id": "railway-technician", "nco": "7233", "track": "service", "minEducation": "class10",
+    "name": { "en": "Railway technician", "hi": "रेलवे तकनीशियन", "ta": "ரயில்வே தொழில்நுட்பர்", "kn": "ರೈಲ್ವೆ ತಂತ್ರಜ್ಞ" },
+    "summary": { "en": "Maintain trains and tracks; a government job open to ITI students.", "hi": "ट्रेन और पटरियों का रखरखाव; ITI वालों के लिए सरकारी नौकरी।", "ta": "ரயில், தண்டவாளப் பராமரிப்பு; ITI படித்தவர்களுக்கு அரசு வேலை.", "kn": "ರೈಲು, ಹಳಿ ನಿರ್ವಹಣೆ; ITI ಓದಿದವರಿಗೆ ಸರ್ಕಾರಿ ಉದ್ಯೋಗ." },
+    "interests": ["hands_on", "uniform"],
+    "steps": [
+      { "label": { "en": "ITI in Fitter / Electrician / Mechanic" }, "courseId": "iti-fitter" },
+      { "label": { "en": "Railway apprenticeship (Act Apprentice)" } },
+      { "label": { "en": "RRB ALP or Group D exam" } }
+    ],
+    "exams": ["rrb-alp", "rrb-group-d"],
+    "schemes": ["naps"],
+    "sources": [{ "name": "Railway Recruitment Boards", "url": "https://indianrailways.gov.in", "asOf": "2026-11" }]
+  },
+  {
+    "id": "doctor", "nco": "2211", "track": "degree", "minEducation": "class12",
+    "name": { "en": "Doctor", "hi": "डॉक्टर", "ta": "மருத்துவர்", "kn": "ವೈದ್ಯ" },
+    "summary": { "en": "MBBS after NEET; long path, government seats are low-fee.", "hi": "NEET के बाद MBBS; लंबा रास्ता, सरकारी सीटों पर कम फ़ीस।", "ta": "NEET பின் MBBS; நீண்ட பாதை, அரசு இடங்களில் குறைந்த கட்டணம்.", "kn": "NEET ನಂತರ MBBS; ದೀರ್ಘ ಹಾದಿ, ಸರ್ಕಾರಿ ಸೀಟುಗಳಲ್ಲಿ ಕಡಿಮೆ ಶುಲ್ಕ." },
+    "interests": ["caring"],
+    "steps": [
+      { "label": { "en": "Class 11-12 with Physics, Chemistry, Biology" } },
+      { "label": { "en": "NEET-UG preparation (free lectures on SWAYAM / state channels)" } },
+      { "label": { "en": "MBBS (5.5 years)" } }
+    ],
+    "exams": ["neet-ug"],
+    "schemes": ["csss", "sc-post-matric", "st-post-matric", "pm-yasasvi", "inspire-she"],
+    "sources": [{ "name": "National Testing Agency - NEET", "url": "https://neet.nta.nic.in", "asOf": "2026-11" }]
+  },
+  {
+    "id": "potter-artisan", "nco": "7314", "track": "self_employed", "minEducation": "class8",
+    "name": { "en": "Potter and craft artisan", "hi": "कुम्हार और शिल्पकार", "ta": "குயவர் மற்றும் கைவினைஞர்", "kn": "ಕುಂಬಾರ ಮತ್ತು ಕರಕುಶಲಿ" },
+    "summary": { "en": "Turn the family craft into a brand that sells online.", "hi": "पारिवारिक कला को ऑनलाइन बिकने वाला ब्रांड बनाना।", "ta": "குடும்பக் கைவினையை ஆன்லைனில் விற்கும் பிராண்டாக மாற்றுதல்.", "kn": "ಕುಟುಂಬದ ಕಲೆಯನ್ನು ಆನ್‌ಲೈನ್ ಮಾರಾಟದ ಬ್ರ್ಯಾಂಡ್ ಆಗಿಸುವುದು." },
+    "interests": ["creative", "hands_on"],
+    "steps": [
+      { "label": { "en": "PM Vishwakarma skill verification and basic training" } },
+      { "label": { "en": "Toolkit voucher and first Rs 1 lakh loan" } },
+      { "label": { "en": "Sell through ONDC, GeM and craft fairs" } }
+    ],
+    "exams": [],
+    "schemes": ["pm-vishwakarma", "pmegp"],
+    "sources": [{ "name": "PM Vishwakarma trade list", "url": "https://pmvishwakarma.gov.in", "asOf": "2026-11" }]
+  }
+]

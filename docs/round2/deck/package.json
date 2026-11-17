@@ -1,0 +1,7 @@
+{
+  "name": "hunar-setu-round2-deck",
+  "private": true,
+  "description": "Builds the Round 2 presentation from docs/round2/data-points.json and docs/round2/screens",
+  "scripts": { "build": "node build-deck.cjs" },
+  "devDependencies": { "pptxgenjs": "^3.12.0" }
+}

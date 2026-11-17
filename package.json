@@ -1,0 +1,43 @@
+{
+  "name": "hunar-setu",
+  "version": "0.1.0",
+  "description": "Hunar Setu - voice-first, offline-first learning-to-livelihood platform for rural India (Citi India Hackathon prototype)",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "dev": "concurrently -n api,web -c blue,green \"npm:dev:api\" \"npm:dev:web\"",
+    "dev:api": "node --watch server/index.ts",
+    "dev:web": "vite",
+    "build": "vite build",
+    "start": "node server/index.ts",
+    "hub": "npm run build && HUB=1 node server/index.ts",
+    "test": "node --test shared/engine/*.test.ts server/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "kb:check": "node scripts/kb-check.ts",
+    "kb:translate": "node scripts/translate-kb.ts",
+    "seed:demo": "node scripts/seed-demo.ts",
+    "data:points": "node scripts/data-points.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.8.0",
+    "express": "^5.3.0",
+    "idb-keyval": "^6.3.0",
+    "preact": "^11.2.0",
+    "qrcode": "^1.5.4",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.10.6",
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.6",
+    "@types/qrcode": "^1.5.6",
+    "concurrently": "^9.2.1",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8",
+    "vite-plugin-pwa": "^2.0.0"
+  }
+}

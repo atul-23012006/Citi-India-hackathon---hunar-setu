@@ -1,0 +1,386 @@
+[
+  {
+    "id": "sc-pre-matric",
+    "name": "Pre-Matric Scholarship for SC Students (Class 9-10)",
+    "ministry": "Ministry of Social Justice & Empowerment",
+    "type": "scholarship",
+    "benefit": { "en": "Yearly scholarship for Class 9 and 10, paid to your bank account", "hi": "कक्षा 9 और 10 के लिए सालाना छात्रवृत्ति, सीधे बैंक खाते में", "ta": "9 மற்றும் 10ஆம் வகுப்புக்கு ஆண்டு உதவித்தொகை, நேரடியாக வங்கிக் கணக்கில்", "kn": "9 ಮತ್ತು 10ನೇ ತರಗತಿಗೆ ವಾರ್ಷಿಕ ವಿದ್ಯಾರ್ಥಿವೇತನ, ನೇರವಾಗಿ ಬ್ಯಾಂಕ್ ಖಾತೆಗೆ" },
+    "conditions": [
+      { "kind": "category", "anyOf": ["SC"] },
+      { "kind": "education", "anyOf": ["class9", "class10"] },
+      { "kind": "inEducation", "value": true },
+      { "kind": "incomeMax", "value": 250000 },
+      { "kind": "doc", "doc": "caste_cert" },
+      { "kind": "doc", "doc": "income_cert" },
+      { "kind": "doc", "doc": "aadhaar_seeded" }
+    ],
+    "applyAt": "https://scholarships.gov.in",
+    "window": "State portals; usually opens Jul-Sep",
+    "dbt": true,
+    "sources": [{ "name": "MoSJE scheme guidelines via National Scholarship Portal", "url": "https://scholarships.gov.in", "asOf": "2026-11" }]
+  },
+  {
+    "id": "sc-post-matric",
+    "name": "Post-Matric Scholarship for SC Students",
+    "ministry": "Ministry of Social Justice & Empowerment",
+    "type": "scholarship",
+    "benefit": { "en": "Fees plus a yearly allowance from Class 11 up to PhD, including ITI and diploma", "hi": "कक्षा 11 से पीएचडी तक (ITI, डिप्लोमा सहित) फीस और सालाना भत्ता", "ta": "11ஆம் வகுப்பு முதல் PhD வரை (ITI, டிப்ளமோ உட்பட) கட்டணம் மற்றும் ஆண்டு உதவி", "kn": "11ನೇ ತರಗತಿಯಿಂದ PhD ವರೆಗೆ (ITI, ಡಿಪ್ಲೊಮಾ ಸೇರಿ) ಶುಲ್ಕ ಮತ್ತು ವಾರ್ಷಿಕ ಭತ್ಯೆ" },
+    "conditions": [
+      { "kind": "category", "anyOf": ["SC"] },
+      { "kind": "education", "anyOf": ["class11", "class12", "iti", "diploma", "ug", "pg"] },
+      { "kind": "inEducation", "value": true },
+      { "kind": "incomeMax", "value": 250000 },
+      { "kind": "doc", "doc": "caste_cert" },
+      { "kind": "doc", "doc": "income_cert" },
+      { "kind": "doc", "doc": "marksheet_10" },
+      { "kind": "doc", "doc": "aadhaar_seeded" }
+    ],
+    "applyAt": "https://scholarships.gov.in",
+    "window": "State portals; usually opens Jul-Oct",
+    "dbt": true,
+    "sources": [{ "name": "MoSJE Post-Matric Scholarship for SCs guidelines", "url": "https://socialjustice.gov.in", "asOf": "2026-11" }]
+  },
+  {
+    "id": "st-post-matric",
+    "name": "Post-Matric Scholarship for ST Students",
+    "ministry": "Ministry of Tribal Affairs",
+    "type": "scholarship",
+    "benefit": { "en": "Fees plus a yearly allowance from Class 11 onwards, including ITI and diploma", "hi": "कक्षा 11 से आगे (ITI, डिप्लोमा सहित) फीस और सालाना भत्ता", "ta": "11ஆம் வகுப்பு முதல் (ITI, டிப்ளமோ உட்பட) கட்டணம் மற்றும் ஆண்டு உதவி", "kn": "11ನೇ ತರಗತಿಯಿಂದ (ITI, ಡಿಪ್ಲೊಮಾ ಸೇರಿ) ಶುಲ್ಕ ಮತ್ತು ವಾರ್ಷಿಕ ಭತ್ಯೆ" },
+    "conditions": [
+      { "kind": "category", "anyOf": ["ST"] },
+      { "kind": "education", "anyOf": ["class11", "class12", "iti", "diploma", "ug", "pg"] },
+      { "kind": "inEducation", "value": true },
+      { "kind": "incomeMax", "value": 250000 },
+      { "kind": "doc", "doc": "caste_cert" },
+      { "kind": "doc", "doc": "income_cert" },
+      { "kind": "doc", "doc": "aadhaar_seeded" }
+    ],
+    "applyAt": "https://scholarships.gov.in",
+    "window": "State portals; usually opens Jul-Oct",
+    "dbt": true,
+    "sources": [{ "name": "Ministry of Tribal Affairs scholarship guidelines", "url": "https://tribal.nic.in", "asOf": "2026-11" }]
+  },
+  {
+    "id": "st-pre-matric",
+    "name": "Pre-Matric Scholarship for ST Students (Class 9-10)",
+    "ministry": "Ministry of Tribal Affairs",
+    "type": "scholarship",
+    "benefit": { "en": "Yearly scholarship for Class 9 and 10", "hi": "कक्षा 9 और 10 के लिए सालाना छात्रवृत्ति", "ta": "9 மற்றும் 10ஆம் வகுப்புக்கு ஆண்டு உதவித்தொகை", "kn": "9 ಮತ್ತು 10ನೇ ತರಗತಿಗೆ ವಾರ್ಷಿಕ ವಿದ್ಯಾರ್ಥಿವೇತನ" },
+    "conditions": [
+      { "kind": "category", "anyOf": ["ST"] },
+      { "kind": "education", "anyOf": ["class9", "class10"] },
+      { "kind": "inEducation", "value": true },
+      { "kind": "incomeMax", "value": 250000 },
+      { "kind": "doc", "doc": "caste_cert" },
+      { "kind": "doc", "doc": "income_cert" },
+      { "kind": "doc", "doc": "aadhaar_seeded" }
+    ],
+    "applyAt": "https://scholarships.gov.in",
+    "dbt": true,
+    "sources": [{ "name": "Ministry of Tribal Affairs scholarship guidelines", "url": "https://tribal.nic.in", "asOf": "2026-11" }]
+  },
+  {
+    "id": "pm-yasasvi",
+    "name": "PM YASASVI Scholarship (OBC, EBC, DNT)",
+    "ministry": "Ministry of Social Justice & Empowerment",
+    "type": "scholarship",
+    "benefit": { "en": "Pre-matric (Class 9-10) and post-matric scholarship for OBC, EBC and DNT students", "hi": "OBC, EBC और DNT छात्रों के लिए प्री-मैट्रिक (9-10) और पोस्ट-मैट्रिक छात्रवृत्ति", "ta": "OBC, EBC, DNT மாணவர்களுக்கு 9-10 மற்றும் மேல்நிலை உதவித்தொகை", "kn": "OBC, EBC, DNT ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ 9-10 ಮತ್ತು ನಂತರದ ವಿದ್ಯಾರ್ಥಿವೇತನ" },
+    "conditions": [
+      { "kind": "category", "anyOf": ["OBC"] },
+      { "kind": "education", "anyOf": ["class9", "class10", "class11", "class12", "iti", "diploma", "ug", "pg"] },
+      { "kind": "inEducation", "value": true },
+      { "kind": "incomeMax", "value": 250000 },
+      { "kind": "doc", "doc": "caste_cert" },
+      { "kind": "doc", "doc": "income_cert" },
+      { "kind": "doc", "doc": "aadhaar_seeded" }
+    ],
+    "notes": "EBC and DNT students are also covered; the prototype models OBC only.",
+    "applyAt": "https://scholarships.gov.in",
+    "dbt": true,
+    "sources": [{ "name": "PM YASASVI guidelines, MoSJE", "url": "https://socialjustice.gov.in", "asOf": "2026-11" }]
+  },
+  {
+    "id": "nmmss",
+    "name": "National Means-cum-Merit Scholarship (NMMSS)",
+    "ministry": "Ministry of Education",
+    "type": "scholarship",
+    "benefit": { "en": "Rs 12,000 a year from Class 9 to 12 if you clear the NMMS exam in Class 8", "hi": "कक्षा 8 में NMMS परीक्षा पास करने पर कक्षा 9 से 12 तक हर साल 12,000 रुपये", "ta": "8ஆம் வகுப்பில் NMMS தேர்வில் தேர்ச்சி பெற்றால் 9 முதல் 12 வரை ஆண்டுக்கு ரூ.12,000", "kn": "8ನೇ ತರಗತಿಯಲ್ಲಿ NMMS ಪರೀಕ್ಷೆ ಪಾಸ್ ಆದರೆ 9 ರಿಂದ 12ರವರೆಗೆ ವರ್ಷಕ್ಕೆ ರೂ.12,000" },
+    "benefitRupeesPerYear": 12000,
+    "conditions": [
+      { "kind": "education", "anyOf": ["class8", "class9"] },
+      { "kind": "inEducation", "value": true },
+      { "kind": "incomeMax", "value": 350000 },
+      { "kind": "marksMin", "value": 55 },
+      { "kind": "doc", "doc": "income_cert" },
+      { "kind": "doc", "doc": "aadhaar_seeded" }
+    ],
+    "notes": "Only for students in government, aided and local-body schools. Marks threshold is 50% for SC/ST.",
+    "applyAt": "https://scholarships.gov.in",
+    "window": "State NMMS exam usually Nov-Dec of Class 8",
+    "dbt": true,
+    "sources": [{ "name": "NMMSS guidelines, Department of School Education & Literacy", "url": "https://dsel.education.gov.in", "asOf": "2026-11" }]
+  },
+  {
+    "id": "csss",
+    "name": "Central Sector Scheme of Scholarship for College and University Students (PM-USP)",
+    "ministry": "Ministry of Education",
+    "type": "scholarship",
+    "benefit": { "en": "Rs 12,000 a year for the first three years of a degree, Rs 20,000 at postgraduate level", "hi": "डिग्री के पहले तीन साल 12,000 रुपये सालाना, पोस्ट-ग्रेजुएशन में 20,000 रुपये", "ta": "பட்டப்படிப்பின் முதல் மூன்று ஆண்டுகள் ஆண்டுக்கு ரூ.12,000, முதுநிலையில் ரூ.20,000", "kn": "ಪದವಿಯ ಮೊದಲ ಮೂರು ವರ್ಷ ವರ್ಷಕ್ಕೆ ರೂ.12,000, ಸ್ನಾತಕೋತ್ತರದಲ್ಲಿ ರೂ.20,000" },
+    "benefitRupeesPerYear": 12000,
+    "conditions": [
+      { "kind": "education", "anyOf": ["class12", "ug", "pg"] },
+      { "kind": "marksMin", "value": 80 },
+      { "kind": "incomeMax", "value": 450000 },
+      { "kind": "doc", "doc": "marksheet_12" },
+      { "kind": "doc", "doc": "income_cert" },
+      { "kind": "doc", "doc": "aadhaar_seeded" }
+    ],
+    "notes": "The real cut-off is the 80th percentile of successful candidates in your board and stream, not 80% marks; the prototype uses 80% as a proxy and says so. Diploma courses are excluded.",
+    "applyAt": "https://scholarships.gov.in",
+    "window": "NSP; usually Jul-Oct",
+    "dbt": true,
+    "sources": [
+      { "name": "PM-USP / CSSS guidelines and DoHE FAQ on NSP", "url": "https://scholarships.gov.in/public/schemeGuidelines/FAQ_DOHE_CSSS.pdf", "asOf": "2026-11" }
+    ]
+  },
+  {
+    "id": "aicte-pragati",
+    "name": "AICTE Pragati Scholarship for Girls",
+    "ministry": "AICTE, Ministry of Education",
+    "type": "scholarship",
+    "benefit": { "en": "Rs 50,000 a year for girls in an AICTE-approved degree or diploma", "hi": "AICTE मान्यता प्राप्त डिग्री या डिप्लोमा में पढ़ रही लड़कियों को सालाना 50,000 रुपये", "ta": "AICTE அங்கீகாரம் பெற்ற பட்டம்/டிப்ளமோ படிக்கும் மாணவிகளுக்கு ஆண்டுக்கு ரூ.50,000", "kn": "AICTE ಮಾನ್ಯ ಪದವಿ/ಡಿಪ್ಲೊಮಾ ಓದುವ ಹುಡುಗಿಯರಿಗೆ ವರ್ಷಕ್ಕೆ ರೂ.50,000" },
+    "benefitRupeesPerYear": 50000,
+    "conditions": [
+      { "kind": "gender", "anyOf": ["female"] },
+      { "kind": "education", "anyOf": ["class10", "class12", "diploma", "ug"] },
+      { "kind": "incomeMax", "value": 800000 },
+      { "kind": "doc", "doc": "income_cert" },
+      { "kind": "doc", "doc": "aadhaar_seeded" }
+    ],
+    "notes": "Must be admitted to first year (or second year by lateral entry) of an AICTE-approved technical course. Up to two girls per family.",
+    "applyAt": "https://scholarships.gov.in",
+    "dbt": true,
+    "sources": [{ "name": "AICTE Pragati scheme", "url": "https://www.aicte-india.org/schemes/students-development-schemes", "asOf": "2026-11" }]
+  },
+  {
+    "id": "aicte-saksham",
+    "name": "AICTE Saksham Scholarship (students with disability)",
+    "ministry": "AICTE, Ministry of Education",
+    "type": "scholarship",
+    "benefit": { "en": "Rs 50,000 a year for students with 40% or more disability in an AICTE-approved course", "hi": "40% या अधिक दिव्यांगता वाले छात्रों को AICTE कोर्स में सालाना 50,000 रुपये", "ta": "40% அல்லது அதற்கு மேல் மாற்றுத்திறன் உள்ள மாணவர்களுக்கு ஆண்டுக்கு ரூ.50,000", "kn": "40% ಅಥವಾ ಹೆಚ್ಚು ಅಂಗವೈಕಲ್ಯ ಇರುವ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ವರ್ಷಕ್ಕೆ ರೂ.50,000" },
+    "benefitRupeesPerYear": 50000,
+    "conditions": [
+      { "kind": "disabilityMin", "value": 40 },
+      { "kind": "education", "anyOf": ["class10", "class12", "diploma", "ug"] },
+      { "kind": "incomeMax", "value": 800000 },
+      { "kind": "doc", "doc": "disability_cert" },
+      { "kind": "doc", "doc": "income_cert" },
+      { "kind": "doc", "doc": "aadhaar_seeded" }
+    ],
+    "applyAt": "https://scholarships.gov.in",
+    "dbt": true,
+    "sources": [{ "name": "AICTE Saksham scheme", "url": "https://www.aicte-india.org/schemes/students-development-schemes", "asOf": "2026-11" }]
+  },
+  {
+    "id": "minority-post-matric",
+    "name": "Post-Matric Scholarship for Minorities",
+    "ministry": "Ministry of Minority Affairs",
+    "type": "scholarship",
+    "benefit": { "en": "Fees and maintenance allowance from Class 11 onwards for minority-community students", "hi": "अल्पसंख्यक छात्रों के लिए कक्षा 11 से आगे फीस और भत्ता", "ta": "சிறுபான்மை மாணவர்களுக்கு 11ஆம் வகுப்பு முதல் கட்டணம் மற்றும் உதவி", "kn": "ಅಲ್ಪಸಂಖ್ಯಾತ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ 11ನೇ ತರಗತಿಯಿಂದ ಶುಲ್ಕ ಮತ್ತು ಭತ್ಯೆ" },
+    "conditions": [
+      { "kind": "minority", "value": true },
+      { "kind": "education", "anyOf": ["class11", "class12", "iti", "diploma", "ug", "pg"] },
+      { "kind": "inEducation", "value": true },
+      { "kind": "incomeMax", "value": 200000 },
+      { "kind": "marksMin", "value": 50 },
+      { "kind": "doc", "doc": "income_cert" },
+      { "kind": "doc", "doc": "bonafide" },
+      { "kind": "doc", "doc": "aadhaar_seeded" }
+    ],
+    "notes": "Institution verification is mandatory, which is the check that the 2023 CBI case showed fake institutes had bypassed.",
+    "applyAt": "https://scholarships.gov.in",
+    "dbt": true,
+    "sources": [{ "name": "Ministry of Minority Affairs scholarship guidelines", "url": "https://minorityaffairs.gov.in", "asOf": "2026-11" }]
+  },
+  {
+    "id": "inspire-she",
+    "name": "INSPIRE Scholarship for Higher Education (SHE)",
+    "ministry": "Department of Science & Technology",
+    "type": "scholarship",
+    "benefit": { "en": "Rs 80,000 a year to study natural or basic sciences (BSc, BS, Int. MSc)", "hi": "प्राकृतिक/मूल विज्ञान पढ़ने के लिए सालाना 80,000 रुपये", "ta": "அடிப்படை அறிவியல் படிக்க ஆண்டுக்கு ரூ.80,000", "kn": "ಮೂಲ ವಿಜ್ಞಾನ ಓದಲು ವರ್ಷಕ್ಕೆ ರೂ.80,000" },
+    "benefitRupeesPerYear": 80000,
+    "conditions": [
+      { "kind": "education", "anyOf": ["class12", "ug"] },
+      { "kind": "marksMin", "value": 90 },
+      { "kind": "doc", "doc": "marksheet_12" },
+      { "kind": "doc", "doc": "bank_account" }
+    ],
+    "notes": "The real test is the top 1% of your board in Class 12 (or a JEE/NEET rank within 10,000); 90% marks is the prototype's proxy and is flagged as one.",
+    "applyAt": "https://online-inspire.gov.in",
+    "dbt": true,
+    "sources": [{ "name": "DST INSPIRE-SHE", "url": "https://online-inspire.gov.in", "asOf": "2026-11" }]
+  },
+  {
+    "id": "tn-pudhumai-penn",
+    "name": "Pudhumai Penn (Tamil Nadu, girls)",
+    "ministry": "Government of Tamil Nadu",
+    "type": "scholarship",
+    "benefit": { "en": "Rs 1,000 a month in college for girls who studied Class 6-12 in government schools", "hi": "सरकारी स्कूल से कक्षा 6-12 पढ़ी लड़कियों को कॉलेज में हर महीने 1,000 रुपये", "ta": "அரசுப் பள்ளியில் 6-12 படித்த மாணவிகளுக்கு கல்லூரியில் மாதம் ரூ.1,000", "kn": "ಸರ್ಕಾರಿ ಶಾಲೆಯಲ್ಲಿ 6-12 ಓದಿದ ಹುಡುಗಿಯರಿಗೆ ಕಾಲೇಜಿನಲ್ಲಿ ತಿಂಗಳಿಗೆ ರೂ.1,000" },
+    "benefitRupeesPerYear": 12000,
+    "conditions": [
+      { "kind": "state", "anyOf": ["TN"] },
+      { "kind": "gender", "anyOf": ["female", "other"] },
+      { "kind": "education", "anyOf": ["class12", "iti", "diploma", "ug"] },
+      { "kind": "inEducation", "value": true },
+      { "kind": "doc", "doc": "bonafide" },
+      { "kind": "doc", "doc": "aadhaar_seeded" }
+    ],
+    "notes": "Requires Class 6-12 in government or government-aided schools. Extended to transgender students in 2025.",
+    "applyAt": "https://www.pudhumaipenn.tn.gov.in",
+    "dbt": true,
+    "sources": [{ "name": "myScheme: Pudhumai Penn", "url": "https://myscheme.gov.in/schemes/pudhumai-penn-scheme", "asOf": "2026-11" }]
+  },
+  {
+    "id": "tn-tamil-pudhalvan",
+    "name": "Tamil Pudhalvan (Tamil Nadu, boys)",
+    "ministry": "Government of Tamil Nadu",
+    "type": "scholarship",
+    "benefit": { "en": "Rs 1,000 a month in college for boys who studied Class 6-12 in government schools", "hi": "सरकारी स्कूल से कक्षा 6-12 पढ़े लड़कों को कॉलेज में हर महीने 1,000 रुपये", "ta": "அரசுப் பள்ளியில் 6-12 படித்த மாணவர்களுக்கு கல்லூரியில் மாதம் ரூ.1,000", "kn": "ಸರ್ಕಾರಿ ಶಾಲೆಯಲ್ಲಿ 6-12 ಓದಿದ ಹುಡುಗರಿಗೆ ಕಾಲೇಜಿನಲ್ಲಿ ತಿಂಗಳಿಗೆ ರೂ.1,000" },
+    "benefitRupeesPerYear": 12000,
+    "conditions": [
+      { "kind": "state", "anyOf": ["TN"] },
+      { "kind": "gender", "anyOf": ["male", "other"] },
+      { "kind": "education", "anyOf": ["class12", "iti", "diploma", "ug"] },
+      { "kind": "inEducation", "value": true },
+      { "kind": "doc", "doc": "bonafide" },
+      { "kind": "doc", "doc": "aadhaar_seeded" }
+    ],
+    "notes": "Launched August 2024. Requires Class 6-12 in government schools (Tamil medium per several sources).",
+    "applyAt": "https://umis.tn.gov.in",
+    "dbt": true,
+    "sources": [{ "name": "Vikaspedia: Tamizh Pudhalvan scheme", "url": "https://en.vikaspedia.in/viewcontent/schemesall/state-specific-schemes/welfare-schemes-of-tamil-nadu/tamizh-pudhalvan-scheme", "asOf": "2026-11" }]
+  },
+  {
+    "id": "pm-internship",
+    "name": "PM Internship Scheme",
+    "ministry": "Ministry of Corporate Affairs",
+    "type": "internship",
+    "benefit": { "en": "Paid internship in a top company: at least Rs 9,000 a month, plus a one-time grant", "hi": "बड़ी कंपनी में सशुल्क इंटर्नशिप: कम से कम 9,000 रुपये महीना, साथ में एकमुश्त अनुदान", "ta": "பெரிய நிறுவனத்தில் ஊதியத்துடன் பயிற்சி: மாதம் குறைந்தது ரூ.9,000, ஒருமுறை உதவித்தொகை", "kn": "ದೊಡ್ಡ ಕಂಪನಿಯಲ್ಲಿ ವೇತನ ಸಹಿತ ಇಂಟರ್ನ್‌ಶಿಪ್: ತಿಂಗಳಿಗೆ ಕನಿಷ್ಠ ರೂ.9,000, ಜೊತೆಗೆ ಒಂದು ಬಾರಿ ಅನುದಾನ" },
+    "benefitRupeesPerYear": 108000,
+    "conditions": [
+      { "kind": "age", "min": 18, "max": 25 },
+      { "kind": "education", "anyOf": ["class10", "class11", "class12", "iti", "diploma", "ug", "pg"] },
+      { "kind": "incomeMax", "value": 800000 },
+      { "kind": "noGovtEmployeeInFamily" },
+      { "kind": "doc", "doc": "aadhaar_seeded" }
+    ],
+    "notes": "2026 revision: final-year students aged 18-25 can apply with an institution NOC; others must not be in full-time education or employment. Stipend raised to a minimum of Rs 9,000 a month. A one-time grant (Rs 6,000 under the 2024 pilot) is paid on joining.",
+    "applyAt": "https://pminternship.mca.gov.in",
+    "dbt": true,
+    "sources": [
+      { "name": "Business Today, 'Eligibility expanded in PM Internship Scheme', 22 Apr 2026", "url": "https://www.businesstoday.in/latest/economy/story/eligibility-expanded-in-pm-internship-scheme-read-all-about-new-criteria-526943-2026-04-22", "asOf": "2026-11" }
+    ]
+  },
+  {
+    "id": "naps",
+    "name": "National Apprenticeship Promotion Scheme (NAPS-2)",
+    "ministry": "Ministry of Skill Development & Entrepreneurship",
+    "type": "apprenticeship",
+    "benefit": { "en": "Earn while you learn: employer pays a stipend, government adds 25% (up to Rs 1,500 a month) to your bank account", "hi": "कमाते हुए सीखें: कंपनी वजीफा देती है, सरकार 25% (1,500 रुपये महीना तक) सीधे खाते में जोड़ती है", "ta": "கற்றுக்கொண்டே சம்பாதி: நிறுவனம் உதவித்தொகை தரும், அரசு 25% (மாதம் ரூ.1,500 வரை) சேர்க்கும்", "kn": "ಕಲಿಯುತ್ತಾ ಗಳಿಸಿ: ಕಂಪನಿ ಸ್ಟೈಪೆಂಡ್ ಕೊಡುತ್ತದೆ, ಸರ್ಕಾರ 25% (ತಿಂಗಳಿಗೆ ರೂ.1,500 ವರೆಗೆ) ಸೇರಿಸುತ್ತದೆ" },
+    "benefitRupeesPerYear": 18000,
+    "conditions": [
+      { "kind": "age", "min": 14 },
+      { "kind": "education", "anyOf": ["class8", "class9", "class10", "class11", "class12", "iti", "diploma", "ug"] },
+      { "kind": "doc", "doc": "aadhaar_seeded" }
+    ],
+    "notes": "Minimum age is 18 for hazardous trades. Minimum stipend depends on qualification and was revised in 2025.",
+    "applyAt": "https://www.apprenticeshipindia.gov.in",
+    "dbt": true,
+    "sources": [
+      { "name": "myScheme: NAPS", "url": "https://myscheme.gov.in/schemes/naps", "asOf": "2026-11" },
+      { "name": "NSDC grievance FAQ (stipend schedule)", "url": "https://nsdcindia.org/Grievance/grievance-faqs.html", "asOf": "2026-11" }
+    ]
+  },
+  {
+    "id": "pm-vbry",
+    "name": "PM Viksit Bharat Rozgar Yojana (first job incentive)",
+    "ministry": "Ministry of Labour & Employment",
+    "type": "employment_incentive",
+    "benefit": { "en": "Up to Rs 15,000 (one month's EPF wage) for your first formal job, in two instalments", "hi": "पहली औपचारिक नौकरी पर 15,000 रुपये तक (एक महीने का EPF वेतन), दो किस्तों में", "ta": "முதல் முறையான வேலைக்கு ரூ.15,000 வரை (ஒரு மாத EPF ஊதியம்), இரண்டு தவணைகளில்", "kn": "ಮೊದಲ ಔಪಚಾರಿಕ ಉದ್ಯೋಗಕ್ಕೆ ರೂ.15,000 ವರೆಗೆ (ಒಂದು ತಿಂಗಳ EPF ವೇತನ), ಎರಡು ಕಂತುಗಳಲ್ಲಿ" },
+    "benefitRupeesPerYear": 15000,
+    "conditions": [
+      { "kind": "age", "min": 18 },
+      { "kind": "doc", "doc": "aadhaar_seeded" }
+    ],
+    "notes": "Applies to first-time employees registered with EPFO. This is the EPF credit we use as proof that a placement is real.",
+    "applyAt": "https://www.epfindia.gov.in",
+    "dbt": true,
+    "sources": [{ "name": "PIB release on PM-VBRY, Aug 2026", "url": "https://pib.gov.in", "asOf": "2026-11" }]
+  },
+  {
+    "id": "pm-vishwakarma",
+    "name": "PM Vishwakarma",
+    "ministry": "Ministry of MSME",
+    "type": "enterprise",
+    "benefit": { "en": "For artisans in 18 trades: free training with Rs 500 a day stipend, Rs 15,000 toolkit voucher, loans of Rs 1 lakh then Rs 2 lakh at 5%", "hi": "18 पारंपरिक कारीगरी के लिए: 500 रुपये रोज़ वजीफे के साथ प्रशिक्षण, 15,000 रुपये का टूलकिट, 5% पर 1 लाख फिर 2 लाख का कर्ज़", "ta": "18 கைவினைத் தொழில்களுக்கு: நாள் ரூ.500 உதவியுடன் பயிற்சி, ரூ.15,000 கருவிப் பெட்டி, 5% வட்டியில் ரூ.1 லட்சம் பின் ரூ.2 லட்சம் கடன்", "kn": "18 ಕುಶಲ ವೃತ್ತಿಗಳಿಗೆ: ದಿನಕ್ಕೆ ರೂ.500 ಭತ್ಯೆಯೊಂದಿಗೆ ತರಬೇತಿ, ರೂ.15,000 ಉಪಕರಣ ಚೀಟಿ, 5% ಬಡ್ಡಿಯಲ್ಲಿ ರೂ.1 ಲಕ್ಷ ನಂತರ ರೂ.2 ಲಕ್ಷ ಸಾಲ" },
+    "conditions": [
+      { "kind": "age", "min": 18 },
+      { "kind": "noGovtEmployeeInFamily" },
+      { "kind": "doc", "doc": "aadhaar" },
+      { "kind": "doc", "doc": "bank_account" }
+    ],
+    "notes": "You must already work in one of the 18 family trades (carpenter, blacksmith, potter, tailor, mason and others). One member per family.",
+    "applyAt": "https://pmvishwakarma.gov.in",
+    "dbt": true,
+    "sources": [
+      { "name": "myScheme: PM Vishwakarma", "url": "https://myscheme.gov.in/schemes/pmv", "asOf": "2026-11" },
+      { "name": "PIB factsheet, Sep 2025", "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/sep/doc2025916638501.pdf", "asOf": "2026-11" }
+    ]
+  },
+  {
+    "id": "pmkvy",
+    "name": "Pradhan Mantri Kaushal Vikas Yojana 4.0 (short-term training)",
+    "ministry": "Ministry of Skill Development & Entrepreneurship",
+    "type": "training",
+    "benefit": { "en": "Free short-term skill training and certification at an accredited centre", "hi": "मान्यता प्राप्त केंद्र पर मुफ्त अल्पकालिक कौशल प्रशिक्षण और प्रमाणपत्र", "ta": "அங்கீகரிக்கப்பட்ட மையத்தில் இலவச குறுகிய கால திறன் பயிற்சி மற்றும் சான்றிதழ்", "kn": "ಮಾನ್ಯ ಕೇಂದ್ರದಲ್ಲಿ ಉಚಿತ ಅಲ್ಪಾವಧಿ ಕೌಶಲ ತರಬೇತಿ ಮತ್ತು ಪ್ರಮಾಣಪತ್ರ" },
+    "conditions": [
+      { "kind": "age", "min": 15, "max": 59 },
+      { "kind": "doc", "doc": "aadhaar" }
+    ],
+    "notes": "Hunar Setu counts a PMKVY outcome only when a stipend, salary or EPF credit is shared, not on a certificate (see CAG Report 20 of 2025).",
+    "applyAt": "https://www.skillindiadigital.gov.in",
+    "dbt": false,
+    "sources": [{ "name": "Skill India Digital Hub", "url": "https://www.skillindiadigital.gov.in", "asOf": "2026-11" }]
+  },
+  {
+    "id": "ddu-gky",
+    "name": "Deen Dayal Upadhyaya Grameen Kaushalya Yojana (DDU-GKY)",
+    "ministry": "Ministry of Rural Development",
+    "type": "training",
+    "benefit": { "en": "Free residential skill training for rural youth with a placement linked to it", "hi": "ग्रामीण युवाओं के लिए मुफ्त आवासीय कौशल प्रशिक्षण, साथ में नौकरी", "ta": "கிராமப்புற இளைஞர்களுக்கு இலவச தங்கும் வசதியுடன் திறன் பயிற்சி மற்றும் வேலைவாய்ப்பு", "kn": "ಗ್ರಾಮೀಣ ಯುವಕರಿಗೆ ಉಚಿತ ವಸತಿ ಸಹಿತ ಕೌಶಲ ತರಬೇತಿ ಮತ್ತು ಉದ್ಯೋಗ" },
+    "conditions": [
+      { "kind": "age", "min": 15, "max": 35 },
+      { "kind": "doc", "doc": "aadhaar" }
+    ],
+    "notes": "Upper age limit is 45 for women, SC/ST, PwD and some other groups. For youth from poor rural households.",
+    "applyAt": "https://ddugky.gov.in",
+    "dbt": false,
+    "sources": [{ "name": "DDU-GKY, Ministry of Rural Development", "url": "https://ddugky.gov.in", "asOf": "2026-11" }]
+  },
+  {
+    "id": "pmegp",
+    "name": "PM Employment Generation Programme (PMEGP)",
+    "ministry": "Ministry of MSME / KVIC",
+    "type": "enterprise",
+    "benefit": { "en": "Bank loan with 15-35% government subsidy to start your own small business", "hi": "अपना छोटा व्यवसाय शुरू करने के लिए 15-35% सरकारी सब्सिडी वाला बैंक लोन", "ta": "சொந்தத் தொழில் தொடங்க 15-35% அரசு மானியத்துடன் வங்கிக் கடன்", "kn": "ಸ್ವಂತ ಸಣ್ಣ ಉದ್ಯಮ ಆರಂಭಿಸಲು 15-35% ಸರ್ಕಾರಿ ಸಹಾಯಧನದೊಂದಿಗೆ ಬ್ಯಾಂಕ್ ಸಾಲ" },
+    "conditions": [
+      { "kind": "age", "min": 18 },
+      { "kind": "doc", "doc": "aadhaar" },
+      { "kind": "doc", "doc": "bank_account" }
+    ],
+    "notes": "Class 8 pass is required for projects above Rs 10 lakh (manufacturing) or Rs 5 lakh (service). Rural, women, SC/ST applicants get the higher subsidy.",
+    "applyAt": "https://www.kviconline.gov.in/pmegpeportal",
+    "dbt": false,
+    "sources": [{ "name": "KVIC PMEGP guidelines", "url": "https://www.kviconline.gov.in", "asOf": "2026-11" }]
+  }
+]
