@@ -4,6 +4,7 @@ import { LANGS, t } from "../../../shared/i18n/strings.ts";
 import { getState, hashPin, newProfile, saveProfile, setState, useStore, verifyPin } from "../store.ts";
 import { Logo, Speak } from "../ui.tsx";
 import { speak } from "../voice.ts";
+import { Login, Register } from "./Account.tsx";
 
 export function LangPicker({ lang, onPick }: { lang: Lang; onPick: (l: Lang) => void }) {
   return (
@@ -46,7 +47,7 @@ function PinPad({ lang, title, onDone, error }: { lang: Lang; title: string; onD
   );
 }
 
-type Step = { kind: "home" } | { kind: "unlock"; profile: StudentProfile } | { kind: "consent" } | { kind: "name" } | { kind: "setpin"; name: string; guardian: boolean };
+type Step = { kind: "home" } | { kind: "login" } | { kind: "register" } | { kind: "unlock"; profile: StudentProfile } | { kind: "consent" } | { kind: "name" } | { kind: "setpin"; name: string; guardian: boolean };
 
 export function Welcome({ onFacilitator }: { onFacilitator: () => void }) {
   const s = useStore();
@@ -58,6 +59,9 @@ export function Welcome({ onFacilitator }: { onFacilitator: () => void }) {
   const [agree, setAgree] = useState(false);
 
   const enter = (p: StudentProfile) => setState({ activeId: p.id, uiLang: p.lang });
+
+  if (step.kind === "login") return <Login lang={lang} onRegister={() => setStep({ kind: "register" })} onBack={() => setStep({ kind: "home" })} />;
+  if (step.kind === "register") return <Register lang={lang} onLogin={() => setStep({ kind: "login" })} onBack={() => setStep({ kind: "home" })} />;
 
   if (step.kind === "unlock") {
     return (
@@ -136,12 +140,15 @@ export function Welcome({ onFacilitator }: { onFacilitator: () => void }) {
       <h2>{t(lang, "who.title")}</h2>
       <div class="options">
         {s.profiles.map((p) => (
-          <button class="opt" key={p.id} onClick={() => { setErr(""); setStep({ kind: "unlock", profile: p }); }}>
+          // An account profile opens with its password (it may have been used on another phone since).
+          <button class="opt" key={p.id} onClick={() => { setErr(""); setStep(p.accountId ? { kind: "login" } : { kind: "unlock", profile: p }); }}>
             <span class="avatar" style="display:grid;place-items:center">{p.name.slice(0, 1).toUpperCase() || "?"}</span>
-            {p.name}
+            {p.accountId ? `🔐 ${p.name}` : p.name}
           </button>
         ))}
         <button class="opt" onClick={() => setStep({ kind: "consent" })}><span class="big">➕</span>{t(lang, "who.new")}</button>
+        <button class="opt" onClick={() => setStep({ kind: "register" })}><span class="big">📝</span>{t(lang, "who.register")}</button>
+        <button class="opt" onClick={() => setStep({ kind: "login" })}><span class="big">🔐</span>{t(lang, "who.signin")}</button>
         <button class="opt" onClick={onFacilitator}><span class="big">🧑‍🏫</span>{t(lang, "who.facilitator")}</button>
       </div>
     </main>

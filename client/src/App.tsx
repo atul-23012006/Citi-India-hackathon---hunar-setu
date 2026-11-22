@@ -12,10 +12,13 @@ import { Check } from "./screens/Check.tsx";
 import { Family } from "./screens/Family.tsx";
 import { Passport } from "./screens/Passport.tsx";
 import { Facilitator } from "./screens/Facilitator.tsx";
+import { Nearby } from "./screens/Nearby.tsx";
+import { signOut } from "./account.ts";
 
-type Tab = "discover" | "path" | "money" | "check" | "family" | "passport";
+type Tab = "discover" | "near" | "path" | "money" | "check" | "family" | "passport";
 const TABS: { id: Tab; icon: string; key: StringKey }[] = [
   { id: "discover", icon: "🧭", key: "tab.discover" },
+  { id: "near", icon: "📍", key: "tab.near" },
   { id: "path", icon: "🛤️", key: "tab.path" },
   { id: "money", icon: "💰", key: "tab.money" },
   { id: "check", icon: "🛡️", key: "tab.check" },
@@ -39,7 +42,7 @@ function Header({ lang }: { lang: Lang }) {
           {LANGS.map((l) => <option key={l.code} value={l.code}>{l.label}</option>)}
         </select>
       )}
-      {p && <button class="avatar" aria-label="Switch user" title="Switch user" onClick={() => { stopSpeaking(); setState({ activeId: null }); }}>{p.name.slice(0, 1).toUpperCase() || "?"}</button>}
+      {p && <button class="avatar" aria-label="Switch user" title="Switch user" onClick={() => { stopSpeaking(); if (p.accountId) signOut(); else setState({ activeId: null }); }}>{p.name.slice(0, 1).toUpperCase() || "?"}</button>}
     </header>
     {!s.online && <div class="offline-bar" role="status">{t(lang, "offline")}{pending ? ` · ${t(lang, "sync.pending", { n: pending })}` : ""}</div>}
     </>
@@ -80,6 +83,7 @@ export function App() {
       <Header lang={lang} />
       <main>
         {tab === "discover" && <Discover goPath={() => go("path")} />}
+        {tab === "near" && <Nearby />}
         {tab === "path" && <Path goDiscover={() => go("discover")} goMoney={() => go("money")} goFamily={(id) => { setFamilyOpp(id); go("family"); }} />}
         {tab === "money" && <Money />}
         {tab === "check" && <Check />}

@@ -52,6 +52,7 @@ export interface StudentProfile {
   marksPercent?: number;
   state?: string; // ISO-like short code, e.g. "TN", "KA"
   district?: string;
+  pincode?: string;
   category?: Category;
   minority?: boolean;
   disabilityPercent?: number;
@@ -68,6 +69,7 @@ export interface StudentProfile {
   consent?: { at: string; guardian: boolean }; // DPDP: guardian consent for under-18s
   docs: Partial<Record<DocKey, boolean>>;
   facilitatorId?: string;
+  accountId?: string; // formal account on the hub's Postgres; unlocked by password, not PIN
   updatedAt: string;
 }
 

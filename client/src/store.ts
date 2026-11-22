@@ -25,6 +25,9 @@ export interface State {
   activeId: string | null;
   facilitatorToken: string | null;
   facilitatorName: string | null;
+  // Signed-in account session. The token unlocks the account on the hub only;
+  // the password itself never touches this phone's storage.
+  account: { token: string; id: string; email: string; studentId: string } | null;
   outbox: OutboxOp[];
   online: boolean;
   aiAvailable: boolean;
@@ -46,7 +49,7 @@ export interface HubModule {
   pricing: { model: "free" | "per_module" | "subscription"; rupees: number };
 }
 
-const PERSISTED: (keyof State)[] = ["deviceId", "uiLang", "profiles", "activeId", "facilitatorToken", "facilitatorName", "outbox", "lastSync", "scamReports", "partnerOpportunities", "credentials", "requests", "requestCounts", "modules", "moduleProgress"];
+const PERSISTED: (keyof State)[] = ["deviceId", "uiLang", "profiles", "activeId", "facilitatorToken", "facilitatorName", "account", "outbox", "lastSync", "scamReports", "partnerOpportunities", "credentials", "requests", "requestCounts", "modules", "moduleProgress"];
 
 let state: State = {
   ready: false,
@@ -56,6 +59,7 @@ let state: State = {
   activeId: null,
   facilitatorToken: null,
   facilitatorName: null,
+  account: null,
   outbox: [],
   online: typeof navigator === "undefined" ? true : navigator.onLine,
   aiAvailable: false,

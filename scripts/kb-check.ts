@@ -1,6 +1,7 @@
 // Validates cross-references in the knowledge base. Run: npm run kb:check
 // Partners (states, NGOs) edit JSON, not code; this keeps their edits safe.
-import { kb } from "../shared/kb/index.ts";
+import { kb, translate } from "../shared/kb/index.ts";
+import { msmeTexts } from "../shared/engine/regional.ts";
 
 const errors: string[] = [];
 const ids = (xs: { id: string }[]) => new Set(xs.map((x) => x.id));
@@ -35,6 +36,8 @@ for (const o of kb.opportunities) {
   for (const id of o.occupationIds) if (!occs.has(id)) errors.push(`${o.id}: unknown occupation ${id}`);
   for (const id of o.schemeIds) if (!schemes.has(id)) errors.push(`${o.id}: unknown scheme ${id}`);
 }
+
+for (const en of msmeTexts()) for (const l of ["hi", "ta", "kn"] as const) if (!translate(en)[l]) errors.push(`msme: "${en.slice(0, 50)}..." missing ${l} (run npm run kb:translate)`);
 
 const counts = Object.entries(kb).map(([k, v]) => `${v.length} ${k}`).join(", ");
 if (errors.length) {

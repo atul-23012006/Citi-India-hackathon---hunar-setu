@@ -1,4 +1,5 @@
 import { useEffect, useState } from "preact/hooks";
+import { AccountPanel } from "./Account.tsx";
 import QRCode from "qrcode";
 import { t } from "../../../shared/i18n/strings.ts";
 import { verifyCredential, type VerifyResult } from "../../../shared/vc.ts";
@@ -56,6 +57,7 @@ export function Passport() {
       {pendingTasks > 0 && <div class="card wait">⏳ {t(lang, "sync.pending", { n: pendingTasks })}</div>}
       {mine.length === 0 && !pendingTasks && <div class="card">{t(lang, "passport.empty")}</div>}
       {mine.map((c) => <CredentialCard key={c.id} c={c} />)}
+      <AccountPanel />
     </div>
   );
 }

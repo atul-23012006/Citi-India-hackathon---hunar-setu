@@ -1,0 +1,180 @@
+{
+  "asOf": "2026-07",
+  "national": {
+    "gdpSharePct": 31.1,
+    "manufacturingSharePct": 35.4,
+    "exportSharePct": 48.58,
+    "employmentCrore": 38.9,
+    "registrationsCrore": 8.7,
+    "udyamJobsCrore": [
+      { "year": "FY 2023-24", "value": 5.45 },
+      { "year": "FY 2024-25", "value": 6.91 },
+      { "year": "FY 2025-26", "value": 8.04 }
+    ],
+    "udyamJobsBySectorCrore": { "trading": 2.98, "services": 2.57, "manufacturing": 2.5 },
+    "closures2024_25": 39446,
+    "notes": "GDP, manufacturing and export shares are January 2026 data. Employment estimates differ by source: PIB (June 2026) says 38.9 crore, while the Economic Survey 2025-26 says about 32.8 crore. Udyam job counts are what enterprises self-report when they register.",
+    "sources": [
+      { "name": "PIB factsheet 'From Enterprise to Empowerment: The MSME Story', 26 June 2026", "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2026/jun/doc2026626903401.pdf", "asOf": "2026-06" },
+      { "name": "Lok Sabha written reply on Udyam-reported employment, MoS MSME, July 2026 (as reported)", "url": "https://www.newkerala.com/news/a/government-says-msmes-now-report-over-crore-jobs-102.htm", "asOf": "2026-07" },
+      { "name": "Economic Survey 2025-26 (as reported)", "url": "https://yourstory.com/smbstory/indian-msmes-employ-3282-crore-people-contribute-31-to-gdp-economic-survey-budget-2026", "asOf": "2026-01" }
+    ]
+  },
+  "classification": {
+    "effective": "2025-04-01",
+    "rows": [
+      { "size": "micro", "investmentCrore": 2.5, "turnoverCrore": 10 },
+      { "size": "small", "investmentCrore": 25, "turnoverCrore": 100 },
+      { "size": "medium", "investmentCrore": 125, "turnoverCrore": 500 }
+    ],
+    "source": { "name": "Union Budget 2025-26: investment limits x2.5, turnover limits x2 (Ministry of MSME, PIB PRID 2099687)", "url": "https://pib.gov.in/PressReleasePage.aspx?PRID=2099687", "asOf": "2025-02" }
+  },
+  "supports": [
+    { "id": "udyam", "name": "Udyam Registration", "what": "Free, paperless registration that makes a business an MSME. It's needed for most schemes, priority-sector loans and the Rs 5 lakh Udyam credit card.", "numbers": "8.7 crore registrations on the Udyam portal and Udyam Assist (June 2026)", "url": "https://udyamregistration.gov.in", "forWhom": "Anyone starting or running a small business" },
+    { "id": "pmegp", "name": "PM Employment Generation Programme (PMEGP)", "what": "A bank loan plus a margin-money subsidy to start a new micro-enterprise outside farming.", "numbers": "10.84 lakh enterprises, Rs 29,623 crore in subsidy, more than 97 lakh jobs (May 2026)", "url": "https://www.kviconline.gov.in/pmegpeportal/", "schemeId": "pmegp", "forWhom": "First-time entrepreneurs aged 18+" },
+    { "id": "pm-vishwakarma", "name": "PM Vishwakarma", "what": "Training, a toolkit, digital-payment incentives and collateral-free loans for 18 traditional trades.", "numbers": "30 lakh registered; 24 lakh trained; Rs 5,133 crore lent to 5.98 lakh artisans", "url": "https://pmvishwakarma.gov.in", "schemeId": "pm-vishwakarma", "forWhom": "Artisans: carpenters, tailors, potters, smiths and others" },
+    { "id": "mudra", "name": "PM MUDRA Yojana", "what": "Collateral-free business loans: Shishu up to Rs 50,000, Kishore up to Rs 5 lakh, Tarun up to Rs 10 lakh, Tarun Plus up to Rs 20 lakh.", "numbers": "", "url": "https://www.mudra.org.in", "forWhom": "Micro-enterprises and small shops" },
+    { "id": "cgtmse", "name": "Credit Guarantee Fund (CGTMSE)", "what": "Guarantees bank loans so a small business can borrow without collateral. Cover rose from Rs 5 crore to Rs 10 crore.", "numbers": "29.03 lakh guarantees worth Rs 3.77 lakh crore, Jan-Nov 2025", "url": "https://www.cgtmse.in", "forWhom": "Micro and small enterprises" },
+    { "id": "aspire", "name": "ASPIRE Livelihood Business Incubators", "what": "Rural incubators that train people and help them start micro-enterprises.", "numbers": "109 incubators; 1.23 lakh trained; 32,085 placed in jobs", "url": "https://aspire.msme.gov.in", "forWhom": "Rural youth and women" },
+    { "id": "tech-centres", "name": "MSME Technology Centres", "what": "Tool rooms and extension centres that run industry-ready skill courses with MSMEs.", "numbers": "18 centres (+20 new, +100 extension centres planned); 53,963 youth trained at extension centres", "url": "https://msme.gov.in", "forWhom": "Youth wanting manufacturing skills" },
+    { "id": "stand-up-india", "name": "Stand-Up India", "what": "Bank loans from Rs 10 lakh to Rs 1 crore for a first business.", "numbers": "", "url": "https://www.standupmitra.in", "forWhom": "Women and SC/ST entrepreneurs" }
+  ],
+  "challenges": [
+    "Credit gap: formal lenders still meet only part of MSME demand. Estimates of the gap range from Rs 30 lakh crore upward.",
+    "Delayed payments: the MSME Samadhaan portal has 2,56,892 cases worth Rs 55,244 crore (June 2026).",
+    "Closures: 39,446 enterprises deregistered in 2024-25.",
+    "Most jobs are informal: Udyam figures are self-declared, and say nothing about wages or job security."
+  ],
+  "states": {
+    "TN": {
+      "udyamJobsLakh": 61.47,
+      "clusters": [
+        { "name": "Tiruppur knitwear", "district": "Tiruppur", "sector": "textiles", "occupations": ["tailor-designer"], "searchTerms": ["tailor", "machine operator", "garment"] },
+        { "name": "Coimbatore pumps, motors and foundry", "district": "Coimbatore", "sector": "engineering", "occupations": ["electrician", "welder"], "searchTerms": ["fitter", "electrician", "CNC operator"] },
+        { "name": "Hosur auto and EV components", "district": "Krishnagiri", "sector": "auto", "occupations": ["ev-mechanic", "welder", "electrician"], "searchTerms": ["technician", "assembly", "welder"] },
+        { "name": "Sivakasi printing and safety matches", "district": "Virudhunagar", "sector": "printing", "occupations": ["graphic-designer"], "searchTerms": ["printing", "designer"] },
+        { "name": "Vellore-Ambur-Ranipet leather and footwear", "district": "Ranipet", "sector": "leather", "occupations": ["tailor-designer"], "searchTerms": ["leather", "footwear", "stitching"] },
+        { "name": "Kanchipuram silk weaving", "district": "Kanchipuram", "sector": "textiles", "occupations": ["tailor-designer"], "searchTerms": ["weaver", "silk"] }
+      ]
+    },
+    "KA": {
+      "udyamJobsLakh": 50.87,
+      "clusters": [
+        { "name": "Peenya (Bengaluru) engineering", "district": "Bengaluru Urban", "sector": "engineering", "occupations": ["welder", "electrician", "civil-technician"], "searchTerms": ["machinist", "fitter", "welder"] },
+        { "name": "Belagavi foundry and castings", "district": "Belagavi", "sector": "engineering", "occupations": ["welder"], "searchTerms": ["foundry", "welder"] },
+        { "name": "Channapatna wooden toys", "district": "Ramanagara", "sector": "crafts", "occupations": ["carpenter"], "searchTerms": ["carpenter", "craft"] },
+        { "name": "Mysuru silk and agarbatti", "district": "Mysuru", "sector": "textiles", "occupations": ["tailor-designer"], "searchTerms": ["silk", "packing"] }
+      ]
+    },
+    "UP": {
+      "udyamJobsLakh": 118,
+      "clusters": [
+        { "name": "Noida-Greater Noida mobile and electronics manufacturing", "district": "Gautam Buddha Nagar", "sector": "electronics", "occupations": ["mobile-repair", "electrician"], "searchTerms": ["electronics assembly", "technician"] },
+        { "name": "Moradabad brassware", "district": "Moradabad", "sector": "crafts", "occupations": ["welder"], "searchTerms": ["brass", "polishing", "handicraft"] },
+        { "name": "Firozabad glass and bangles", "district": "Firozabad", "sector": "crafts", "occupations": [], "searchTerms": ["glass", "bangle"] },
+        { "name": "Kanpur and Agra leather and footwear", "district": "Kanpur Nagar", "sector": "leather", "occupations": ["tailor-designer"], "searchTerms": ["leather", "footwear"] },
+        { "name": "Varanasi Banarasi silk", "district": "Varanasi", "sector": "textiles", "occupations": ["tailor-designer"], "searchTerms": ["weaver", "saree"] },
+        { "name": "Bhadohi hand-knotted carpets", "district": "Bhadohi", "sector": "textiles", "occupations": [], "searchTerms": ["carpet", "weaver"] },
+        { "name": "Khurja pottery", "district": "Bulandshahr", "sector": "ceramics", "occupations": ["potter-artisan"], "searchTerms": ["pottery", "ceramic"] },
+        { "name": "Lucknow chikankari", "district": "Lucknow", "sector": "textiles", "occupations": ["tailor-designer"], "searchTerms": ["embroidery", "tailor"] }
+      ]
+    },
+    "BR": {
+      "udyamJobsLakh": 55.54,
+      "clusters": [
+        { "name": "Bhagalpur tussar silk", "district": "Bhagalpur", "sector": "textiles", "occupations": ["tailor-designer"], "searchTerms": ["silk", "weaver"] },
+        { "name": "Muzaffarpur litchi and food processing", "district": "Muzaffarpur", "sector": "food", "occupations": ["baker-food-processing", "agri-field-officer"], "searchTerms": ["food processing", "packing"] },
+        { "name": "Madhubani painting", "district": "Madhubani", "sector": "crafts", "occupations": ["graphic-designer"], "searchTerms": ["artist", "handicraft"] },
+        { "name": "Hajipur and Patna food and leather units", "district": "Vaishali", "sector": "food", "occupations": ["baker-food-processing"], "searchTerms": ["food", "production"] }
+      ]
+    },
+    "MH": {
+      "udyamJobsLakh": 67.97,
+      "clusters": [
+        { "name": "Pune-Chakan auto components", "district": "Pune", "sector": "auto", "occupations": ["ev-mechanic", "welder", "electrician"], "searchTerms": ["technician", "CNC operator", "welder"] },
+        { "name": "Bhiwandi powerlooms", "district": "Thane", "sector": "textiles", "occupations": ["tailor-designer"], "searchTerms": ["loom", "textile"] },
+        { "name": "Kolhapur foundry and engineering", "district": "Kolhapur", "sector": "engineering", "occupations": ["welder"], "searchTerms": ["foundry", "fitter"] },
+        { "name": "Solapur chaddar and terry towels", "district": "Solapur", "sector": "textiles", "occupations": ["tailor-designer"], "searchTerms": ["textile", "machine operator"] },
+        { "name": "Nashik grapes, wine and food processing", "district": "Nashik", "sector": "food", "occupations": ["baker-food-processing", "agri-field-officer"], "searchTerms": ["food processing", "farm"] }
+      ]
+    },
+    "AP": {
+      "udyamJobsLakh": 36.66,
+      "clusters": [
+        { "name": "Sri City and Tirupati electronics", "district": "Tirupati", "sector": "electronics", "occupations": ["electrician", "mobile-repair"], "searchTerms": ["electronics", "production"] },
+        { "name": "Bhimavaram and Nellore aquaculture", "district": "West Godavari", "sector": "marine", "occupations": ["fish-farmer"], "searchTerms": ["aqua", "fisheries"] },
+        { "name": "Mangalagiri and Machilipatnam handloom and kalamkari", "district": "Guntur", "sector": "textiles", "occupations": ["tailor-designer"], "searchTerms": ["handloom", "weaver"] },
+        { "name": "Guntur chilli processing", "district": "Guntur", "sector": "food", "occupations": ["baker-food-processing"], "searchTerms": ["food processing", "warehouse"] }
+      ]
+    },
+    "TS": {
+      "udyamJobsLakh": 60.56,
+      "clusters": [
+        { "name": "Hyderabad pharma and life sciences", "district": "Sangareddy", "sector": "pharma", "occupations": ["lab-technician"], "searchTerms": ["pharma", "lab assistant", "production"] },
+        { "name": "Hyderabad precision engineering and aerospace suppliers", "district": "Medchal-Malkajgiri", "sector": "engineering", "occupations": ["welder", "electrician"], "searchTerms": ["machinist", "fitter"] },
+        { "name": "Pochampally ikat", "district": "Yadadri Bhuvanagiri", "sector": "textiles", "occupations": ["tailor-designer"], "searchTerms": ["handloom", "weaver"] },
+        { "name": "Sircilla powerlooms", "district": "Rajanna Sircilla", "sector": "textiles", "occupations": ["tailor-designer"], "searchTerms": ["textile", "loom"] }
+      ]
+    },
+    "OD": {
+      "clusters": [
+        { "name": "Cuttack silver filigree", "district": "Cuttack", "sector": "crafts", "occupations": [], "searchTerms": ["jewellery", "handicraft"] },
+        { "name": "Sambalpuri handloom", "district": "Bargarh", "sector": "textiles", "occupations": ["tailor-designer"], "searchTerms": ["handloom", "weaver"] },
+        { "name": "Balasore and Paradip seafood", "district": "Balasore", "sector": "marine", "occupations": ["fish-farmer"], "searchTerms": ["seafood", "processing"] },
+        { "name": "Pipili appliqué", "district": "Puri", "sector": "crafts", "occupations": ["tailor-designer"], "searchTerms": ["handicraft", "tailor"] }
+      ]
+    },
+    "GJ": {
+      "clusters": [
+        { "name": "Surat diamonds and synthetic textiles", "district": "Surat", "sector": "textiles", "occupations": ["tailor-designer"], "searchTerms": ["diamond", "textile", "machine operator"] },
+        { "name": "Rajkot engineering and auto parts", "district": "Rajkot", "sector": "engineering", "occupations": ["welder", "electrician"], "searchTerms": ["CNC operator", "fitter", "welder"] },
+        { "name": "Morbi ceramic tiles", "district": "Morbi", "sector": "ceramics", "occupations": ["potter-artisan"], "searchTerms": ["ceramic", "tiles"] },
+        { "name": "Jamnagar brass parts", "district": "Jamnagar", "sector": "engineering", "occupations": ["welder"], "searchTerms": ["brass", "machinist"] }
+      ]
+    },
+    "PB": {
+      "udyamJobsLakh": 14.96,
+      "clusters": [
+        { "name": "Ludhiana hosiery, bicycles and auto parts", "district": "Ludhiana", "sector": "engineering", "occupations": ["welder", "tailor-designer"], "searchTerms": ["hosiery", "cycle", "fitter"] },
+        { "name": "Jalandhar sports goods and hand tools", "district": "Jalandhar", "sector": "engineering", "occupations": ["welder"], "searchTerms": ["sports goods", "production"] },
+        { "name": "Mandi Gobindgarh steel rolling", "district": "Fatehgarh Sahib", "sector": "engineering", "occupations": ["welder"], "searchTerms": ["steel", "welder"] }
+      ]
+    },
+    "RJ": {
+      "clusters": [
+        { "name": "Jaipur gems, jewellery and blue pottery", "district": "Jaipur", "sector": "crafts", "occupations": ["potter-artisan"], "searchTerms": ["jewellery", "handicraft"] },
+        { "name": "Bhilwara textiles", "district": "Bhilwara", "sector": "textiles", "occupations": ["tailor-designer"], "searchTerms": ["textile", "spinning"] },
+        { "name": "Jodhpur handicraft furniture", "district": "Jodhpur", "sector": "crafts", "occupations": ["carpenter"], "searchTerms": ["carpenter", "furniture"] },
+        { "name": "Kishangarh marble", "district": "Ajmer", "sector": "minerals", "occupations": ["civil-technician"], "searchTerms": ["marble", "stone"] }
+      ]
+    },
+    "WB": {
+      "clusters": [
+        { "name": "Howrah foundry and light engineering", "district": "Howrah", "sector": "engineering", "occupations": ["welder"], "searchTerms": ["foundry", "fitter"] },
+        { "name": "Kolkata leather", "district": "Kolkata", "sector": "leather", "occupations": ["tailor-designer"], "searchTerms": ["leather", "stitching"] },
+        { "name": "Shantipur and Phulia handloom", "district": "Nadia", "sector": "textiles", "occupations": ["tailor-designer"], "searchTerms": ["handloom", "weaver"] }
+      ]
+    },
+    "KL": {
+      "clusters": [
+        { "name": "Alappuzha coir", "district": "Alappuzha", "sector": "crafts", "occupations": [], "searchTerms": ["coir", "production"] },
+        { "name": "Kollam cashew processing", "district": "Kollam", "sector": "food", "occupations": ["baker-food-processing"], "searchTerms": ["cashew", "food processing"] },
+        { "name": "Kochi seafood processing", "district": "Ernakulam", "sector": "marine", "occupations": ["fish-farmer"], "searchTerms": ["seafood", "processing"] },
+        { "name": "Thrissur gold jewellery", "district": "Thrissur", "sector": "crafts", "occupations": [], "searchTerms": ["jewellery", "goldsmith"] }
+      ]
+    },
+    "MP": {
+      "clusters": [
+        { "name": "Indore-Pithampur pharma, auto and food", "district": "Dhar", "sector": "pharma", "occupations": ["lab-technician", "ev-mechanic", "baker-food-processing"], "searchTerms": ["pharma", "production", "technician"] },
+        { "name": "Chanderi and Maheshwar handloom", "district": "Ashoknagar", "sector": "textiles", "occupations": ["tailor-designer"], "searchTerms": ["handloom", "weaver"] }
+      ]
+    },
+    "HR": {
+      "clusters": [
+        { "name": "Panipat handloom and recycled textiles", "district": "Panipat", "sector": "textiles", "occupations": ["tailor-designer"], "searchTerms": ["textile", "machine operator"] },
+        { "name": "Faridabad-Gurugram auto components", "district": "Faridabad", "sector": "auto", "occupations": ["ev-mechanic", "welder", "electrician"], "searchTerms": ["technician", "welder", "assembly"] }
+      ]
+    }
+  },
+  "clusterSource": { "name": "UNIDO MSME cluster list (RBI annex) and One District One Product listings; well-known clusters, not an exhaustive list", "url": "https://website.rbi.org.in/documents/87730/39016390/56MD29072022_A1.pdf", "asOf": "2026-07" }
+}

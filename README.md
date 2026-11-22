@@ -19,11 +19,24 @@ Hub mode, the way a facilitator would run it on a laptop or Raspberry Pi with st
 npm run hub            # builds the PWA and serves app + API on :8787 (0.0.0.0)
 ```
 
+**Accounts (Postgres).** Formal sign-up and sign-in need PostgreSQL 13+. Create a role and database, then put the URL in `.env` (the server scripts load it):
+
+```bash
+psql -U postgres -c "CREATE ROLE hunar_setu LOGIN PASSWORD 'choose-one'" \
+                 -c "CREATE DATABASE hunar_setu OWNER hunar_setu" \
+                 -c "CREATE DATABASE hunar_setu_test OWNER hunar_setu"
+cp .env.example .env   # then set DATABASE_URL and TEST_DATABASE_URL
+```
+
+Tables are created on the first account request. Without `DATABASE_URL` the hub runs as before (offline PIN profiles); the sign-up screen just says accounts are unavailable.
+
+**Live job search (optional).** "Near me" searches job boards by the student's district when a key is set: `ADZUNA_APP_ID` + `ADZUNA_APP_KEY` (free at developer.adzuna.com) and/or `JOOBLE_API_KEY` (free at in.jooble.org/api/about). Without keys it shows verified Hunar Setu listings and local MSME clusters.
+
 **AI counsellor (optional).** Set `ANTHROPIC_API_KEY` (or log in with `ant auth login`) before starting.
 The hub probes credentials at start-up and every minute. Without them, the app uses the guided voice interview, and everything else works the same.
 
 ```bash
-npm test               # 23 tests: engine (eligibility, near-miss, diversity rule, offer check, true cost, ...) and HTTP API
+npm test               # 44 tests: engine, regional ranking, job-board parsing, HTTP API, accounts on Postgres (needs TEST_DATABASE_URL)
 npm run data:points    # measure the engine over 1,000 synthetic students -> docs/round2/data-points.json
 npm run seed:demo      # fill a running hub with a synthetic demo cohort (facilitator: "Demo Facilitator", PIN 2468)
 npm run kb:check       # knowledge-base integrity + translation coverage
@@ -32,6 +45,12 @@ npm run typecheck
 ```
 
 ## What the prototype does
+
+**New: accounts, "Near me" and MSME**
+- **Register and sign in** with email or mobile and a password. Accounts live in PostgreSQL. Passwords are hashed with salted scrypt, and session tokens are stored only as SHA-256. Five wrong tries lock the account for 15 minutes. Under-18s need guardian consent (DPDP Act). Students can change their password (which signs out other devices) or erase their account.
+- **Near me** asks where the student is (GPS, pincode, or picking the state) and stores only the district. It shows live openings from job boards, each run through the scam checker; verified Hunar Setu listings ranked for the student; and the MSME industry clusters in their state. Ranking runs on the phone, so verified listings and clusters still work offline.
+- **India's MSME sector:** headline figures, Udyam job growth, help to start a business, and the 2025 size classes, all sourced. Full write-up in [docs/MSME_INDIA.md](docs/MSME_INDIA.md).
+
 
 | Requirement (problem statement) | Where it is |
 |---|---|

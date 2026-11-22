@@ -20,6 +20,11 @@ import type { TalentClaim } from "../shared/vc.ts";
 import { impactReport } from "./impact.ts";
 import { becknSearch } from "./beckn.ts";
 import { openapi } from "./openapi.ts";
+import { accounts } from "./accounts.ts";
+import { fromCoords, fromPincode } from "./location.ts";
+import { searchLive } from "./livejobs.ts";
+import { clustersFor, msme, rankRegional, searchTerms } from "../shared/engine/regional.ts";
+import { PINCODE, STATES, stateName } from "../shared/geo.ts";
 
 export const app = express();
 app.use(express.json({ limit: "256kb" }));
@@ -386,6 +391,63 @@ app.post("/api/partners/opportunities", (req, res) => {
   logOp("opportunity", id);
   res.status(201).json(db.partnerOpportunities[id]);
 });
+
+// ---------- accounts (Postgres) ----------
+
+app.use("/api/auth", accounts);
+
+// ---------- regional opportunities ----------
+
+app.post("/api/location/resolve", wrap(async (req, res) => {
+  const b = z.union([
+    z.object({ pincode: z.string().regex(PINCODE) }),
+    // India's bounding box, so a typo can't send a lookup to the other side of the world.
+    z.object({ lat: z.number().min(6).max(38), lon: z.number().min(68).max(98) }),
+  ]).parse(req.body);
+  try {
+    const place = "pincode" in b ? await fromPincode(b.pincode) : await fromCoords(b.lat, b.lon);
+    if (!place) return res.status(404).json({ error: "not_found" });
+    res.json(place);
+  } catch {
+    res.status(502).json({ error: "lookup_unavailable" }); // the phone falls back to picking the state by hand
+  }
+}));
+
+const RegionalBody = z.object({
+  place: z.object({
+    state: z.string().refine((s) => STATES.some((x) => x.code === s), "unknown state"),
+    district: z.string().trim().max(60).optional(),
+    pincode: z.string().regex(PINCODE).optional(),
+  }),
+  profile: z.object({
+    interests: z.array(z.string()).max(20).default([]),
+    chosenOccupation: z.string().max(60).optional(),
+    education: z.enum(["class8", "class9", "class10", "class11", "class12", "iti", "diploma", "ug", "pg"]).optional(),
+    gender: z.enum(["female", "male", "other"]).optional(),
+    canRelocate: z.boolean().optional(),
+    needsHostel: z.boolean().optional(),
+  }).default({ interests: [] }),
+  q: z.string().trim().max(80).optional(),
+  lang: z.enum(["en", "hi", "ta", "kn"]).default("en"),
+});
+
+app.post("/api/opportunities/regional", wrap(async (req, res) => {
+  const b = RegionalBody.parse(req.body);
+  const place = { ...b.place, stateName: stateName(b.place.state)! };
+  const profile = b.profile as Partial<StudentProfile>;
+  const terms = searchTerms(profile, place, b.q);
+  const live = await searchLive(terms, place, b.lang, reports());
+  res.json({
+    place,
+    terms,
+    live,
+    curated: rankRegional(allOpportunities(), place, profile).slice(0, 12),
+    msme: { udyamJobsLakh: msme.states[place.state]?.udyamJobsLakh ?? null, clusters: clustersFor(place) },
+    fetchedAt: nowIso(),
+  });
+}));
+
+app.get("/api/msme", (_req, res) => res.json(msme));
 
 // ---------- interoperability ----------
 
